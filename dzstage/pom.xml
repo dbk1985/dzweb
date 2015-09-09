@@ -14,5 +14,13 @@
     <artifactId>dzstage</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.dzeep.dzframe</groupId>
+            <artifactId>dzframe</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     
 </project>
