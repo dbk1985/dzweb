@@ -25,30 +25,30 @@
         <pluginManagement>
             <plugins>
                 <!-- 清理工作 -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-clean-plugin</artifactId>
-                    <version>2.6.1</version>
-                    <executions>
-                        <execution>
-                            <id>auto-clean</id>
-                            <phase>initialize</phase>
-                            <goals>
-                                <goal>clean</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <!-- 编译项目和资源 -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.3</version>
-                    <configuration>
-                        <source>${jdkVersion}</source>
-                        <target>${jdkVersion}</target>
-                    </configuration>
-                </plugin>
+                <!--<plugin>-->
+                    <!--<groupId>org.apache.maven.plugins</groupId>-->
+                    <!--<artifactId>maven-clean-plugin</artifactId>-->
+                    <!--<version>2.6.1</version>-->
+                    <!--<executions>-->
+                        <!--<execution>-->
+                            <!--<id>auto-clean</id>-->
+                            <!--<phase>initialize</phase>-->
+                            <!--<goals>-->
+                                <!--<goal>clean</goal>-->
+                            <!--</goals>-->
+                        <!--</execution>-->
+                    <!--</executions>-->
+                <!--</plugin>-->
+                <!--&lt;!&ndash; 编译项目和资源 &ndash;&gt;-->
+                <!--<plugin>-->
+                    <!--<groupId>org.apache.maven.plugins</groupId>-->
+                    <!--<artifactId>maven-compiler-plugin</artifactId>-->
+                    <!--<version>3.3</version>-->
+                    <!--<configuration>-->
+                        <!--<source>${jdkVersion}</source>-->
+                        <!--<target>${jdkVersion}</target>-->
+                    <!--</configuration>-->
+                <!--</plugin>-->
                 <!-- tomcat插件 -->
                 <!--<plugin>-->
                     <!--<groupId>org.apache.tomcat.maven</groupId>-->
