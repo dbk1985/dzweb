@@ -8,6 +8,10 @@ public class UserInfo {
     private String password;
     private String email;
 
+    public UserInfo() {
+        setUserName("hello world");
+    }
+
     public String getUserName() {
         return userName;
     }

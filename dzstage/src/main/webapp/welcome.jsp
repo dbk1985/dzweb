@@ -7,6 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib prefix="s" uri="/struts-tags" %>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -14,6 +16,7 @@
     <title></title>
 </head>
 <body>
-<c:out value="这是jstl el 输出："/><h1>${userInfoBean.userName}</h1>
+<c:out value="这是jstl el 输出："/><h1>${userInfo.userName}</h1>
+<s:property value="userInfo.userName"/>
 </body>
 </html>

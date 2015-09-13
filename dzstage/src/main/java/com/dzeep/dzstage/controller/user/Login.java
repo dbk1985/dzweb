@@ -1,12 +1,13 @@
 package com.dzeep.dzstage.controller.user;
 
-import com.dzeep.dzframe.controller.Base;
+import com.dzeep.dzframe.controller.DZController;
 import com.dzeep.dzstage.model.UserInfo;
+
 
 /**
  * Created by fighting on 15/9/9.
  */
-public class Login extends Base {
+public class Login extends DZController {
     private UserInfo userInfoBean;  /** 登录用户信息模型 */
 
     @Override
