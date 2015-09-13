@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="dzstage:war">
-    <output-path>$PROJECT_DIR$/../dzstage/target</output-path>
+    <output-path>$PROJECT_DIR$/dzstage/target</output-path>
     <root id="archive" name="dzstage.war">
       <element id="artifact" artifact-name="dzstage:war exploded" />
     </root>

@@ -20,24 +20,24 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile default="false" name="Annotation profile for dzstage" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="dzstage" />
+      </profile>
+      <profile default="false" name="Annotation profile for dzframe" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="dzframe" />
       </profile>
-      <profile default="false" name="Annotation profile for dzstage" enabled="true">
-        <sourceOutputDir name="../../dzstage/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../dzstage/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="dzstage" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="dzframe" target="1.5" />
-      <module name="dzstage" target="1.5" />
+      <module name="dzframe" target="1.8" />
+      <module name="dzstage" target="1.8" />
       <module name="dzweb" target="1.5" />
     </bytecodeTargetLevel>
   </component>

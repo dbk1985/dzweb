@@ -10,7 +10,7 @@
         <action name="index">
               <result>/index.jsp</result>
         </action>
-        <action name="login">
+        <action name="login" class="com.dzeep.dzstage.controller.Login">
             <result name="success">/welcome.jsp</result>
         </action>
         </package>

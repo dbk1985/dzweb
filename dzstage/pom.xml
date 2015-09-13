@@ -23,18 +23,20 @@
         </dependency>
     </dependencies>
     <properties>
-        <applicationContextPath>/Applications/apache-tomcat-8.0.24/webapps</applicationContextPath>
+        <applicationContextPath>/Applications/tomcat-8.0.24/webapps</applicationContextPath>
+        <dzstageResourcesDir>${project.basedir}/src/main/resources</dzstageResourcesDir>
+        <dzstageResourcesOutputDir>${applicationContextPath}/${project.artifactId}/WEB-INF/classes</dzstageResourcesOutputDir>
     </properties>
     <build>
-        <directory>${applicationContextPath}/${project.artifactId}/target</directory>
-        <outputDirectory>${pom.build.directory}/classes</outputDirectory>
+        <!--<directory>${applicationContextPath}/${project.artifactId}/target</directory>-->
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
         <finalName>${project.artifactId}</finalName>
         <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
         <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
         <resources>
             <resource>
-                <directory>${project.basedir}/src/main/resources</directory>
-                <targetPath>${applicationContextPath}/${project.artifactId}</targetPath>
+                <directory>${dzstageResourcesDir}</directory>
+                <targetPath>${dzstageResourcesOutputDir}</targetPath>
             </resource>
         </resources>
         <testResources>
@@ -43,24 +45,6 @@
             </testResource>
         </testResources>
         <plugins>
-            <!--<plugin>-->
-                <!--<artifactId>maven-assembly-plugin</artifactId>-->
-                <!--<version>2.5.5</version>-->
-                <!--<configuration>-->
-                    <!--<descriptorRefs>-->
-                        <!--<descriptorRef>jar-with-dependencies</descriptorRef>-->
-                    <!--</descriptorRefs>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>make-assembly</id> &lt;!&ndash; this is used for inheritance merges &ndash;&gt;-->
-                        <!--<phase>package</phase> &lt;!&ndash; bind to the packaging phase &ndash;&gt;-->
-                        <!--<goals>-->
-                            <!--<goal>single</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
             <!-- 使用的package阶段将工程打包为war插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -69,14 +53,39 @@
                 <configuration>
                     <webappDirectory>${applicationContextPath}/${project.artifactId}</webappDirectory>
                 </configuration>
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<phase>package</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>war</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>war</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- 管理资源 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <overwrite>true</overwrite>
+                            <outputDirectory>${dzstageResourcesOutputDir}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${dzstageResourcesDir}</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>
