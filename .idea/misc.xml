@@ -43,6 +43,8 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/dzbackstage" />
+    <file type="web" url="file://$PROJECT_DIR$/dzmobile" />
     <file type="web" url="file://$PROJECT_DIR$/dzstage" />
   </component>
   <component name="MavenProjectsManager">
@@ -51,6 +53,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/dzstage/pom.xml" />
         <option value="$PROJECT_DIR$/dzframe/pom.xml" />
+        <option value="$PROJECT_DIR$/dzbackstage/pom.xml" />
+        <option value="$PROJECT_DIR$/dzmobile/pom.xml" />
       </list>
     </option>
   </component>

@@ -34,9 +34,25 @@
         <processorPath useClasspath="true" />
         <module name="dzframe" />
       </profile>
+      <profile default="false" name="Annotation profile for dzbackstage" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="dzbackstage" />
+      </profile>
+      <profile default="false" name="Annotation profile for dzmobile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="dzmobile" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dzbackstage" target="1.8" />
       <module name="dzframe" target="1.8" />
+      <module name="dzmobile" target="1.8" />
       <module name="dzstage" target="1.8" />
       <module name="dzweb" target="1.5" />
     </bytecodeTargetLevel>

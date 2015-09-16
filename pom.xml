@@ -20,6 +20,7 @@
     <modules>
         <module>dzframe</module>
         <module>dzstage</module>
+        <module>dzbackstage</module>
     </modules>
     <build>
         <pluginManagement>
@@ -47,6 +48,7 @@
                     <configuration>
                         <source>${jdkVersion}</source>
                         <target>${jdkVersion}</target>
+                        <encoding>utf-8</encoding>
                     </configuration>
                 </plugin>
                 <!-- tomcat插件 -->

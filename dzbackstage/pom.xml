@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dzeep.dzweb</groupId>
+        <artifactId>dzweb</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.dzeep.dzbackstage</groupId>
+    <artifactId>dzbackstage</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.dzeep.dzframe</groupId>
+            <artifactId>dzframe</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <!-- 常量设置 -->
+    <properties>
+        <applicationContextPath>/Applications/tomcat-8.0.24/webapps</applicationContextPath>
+        <dzstageResourcesDir>${project.basedir}/src/main/resources</dzstageResourcesDir>
+        <dzstageResourcesOutputDir>${applicationContextPath}/${project.artifactId}/WEB-INF/classes</dzstageResourcesOutputDir>
+    </properties>
+    <build>
+        <!--<directory>${applicationContextPath}/${project.artifactId}/target</directory> 取消编译位置指定，指定时war打包会报错误-->
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+        <finalName>${project.artifactId}</finalName>
+        <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <!-- 配置资源的输入和输出位置-->
+        <resources>
+            <resource>
+                <directory>${dzstageResourcesDir}</directory>
+                <targetPath>${dzstageResourcesOutputDir}</targetPath>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>${project.basedir}/src/test/resources</directory>
+            </testResource>
+        </testResources>
+        <plugins>
+            <!-- 使用的package阶段将工程打包为war插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <webappDirectory>${applicationContextPath}/${project.artifactId}</webappDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>war</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- 管理资源 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <overwrite>true</overwrite>
+                            <outputDirectory>${dzstageResourcesOutputDir}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${dzstageResourcesDir}</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

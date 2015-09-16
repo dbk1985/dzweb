@@ -7,14 +7,14 @@
 <struts>
         <constant name="struts.devMode" value="true" />
         <package name="dzstage" extends="struts-default">
-        <action name="index">
-              <result>/index.jsp</result>
-        </action>
-        <action name="reg" class="com.dzeep.dzstage.controller.user.Register">
-                <result name="success">/welcome.jsp</result>
-        </action>
-        <action name="login" class="com.dzeep.dzstage.controller.user.Login">
-            <result name="success">/welcome.jsp</result>
-        </action>
+                <action name="index">
+                        <result>/index.jsp</result>
+                </action>
+                <action name="reg" class="com.dzeep.dzstage.controller.user.Register">
+                        <result name="success">/welcome.jsp</result>
+                </action>
+                <action name="login" class="com.dzeep.dzstage.controller.user.Login">
+                        <result name="success">/welcome.jsp</result>
+                </action>
         </package>
 </struts>

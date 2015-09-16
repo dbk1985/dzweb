@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dzbackstage/dzbackstage.iml" filepath="$PROJECT_DIR$/dzbackstage/dzbackstage.iml" />
       <module fileurl="file://$PROJECT_DIR$/dzframe/dzframe.iml" filepath="$PROJECT_DIR$/dzframe/dzframe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dzmobile/dzmobile.iml" filepath="$PROJECT_DIR$/dzmobile/dzmobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/dzstage/dzstage.iml" filepath="$PROJECT_DIR$/dzstage/dzstage.iml" />
       <module fileurl="file://$PROJECT_DIR$/dzweb.iml" filepath="$PROJECT_DIR$/dzweb.iml" />
     </modules>
