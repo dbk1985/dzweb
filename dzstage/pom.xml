@@ -21,15 +21,10 @@
             <artifactId>dzframe</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
     </dependencies>
 
     <!-- 常量设置 -->
     <properties>
-        <applicationContextPath>/Applications/apache-tomcat-8.0.24/webapps</applicationContextPath>
         <dzstageResourcesDir>${project.basedir}/src/main/resources</dzstageResourcesDir>
         <dzstageResourcesOutputDir>${applicationContextPath}/${project.artifactId}/WEB-INF/classes</dzstageResourcesOutputDir>
     </properties>

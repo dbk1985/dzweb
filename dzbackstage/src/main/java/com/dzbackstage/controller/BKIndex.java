@@ -9,7 +9,6 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by fighting on 15/9/16.
