@@ -1,16 +1,16 @@
-package com.dzbackstage.serviceImp;
+package com.dzbackstage.dao.imp;
 
-import com.dzbackstage.service.BKService;
+import com.dzbackstage.dao.BKDao;
 
 import java.util.List;
 
 /**
- * Created by tb on 15/9/17.
+ * Created by tb on 15/9/18.
  */
-public class UserInfo extends BKService{
+public class UserInfoDao extends BKDao{
 
     @Override
-    public List<UserInfo> findAll() {
+    public List findAll() {
         return null;
     }
 
@@ -25,7 +25,7 @@ public class UserInfo extends BKService{
     }
 
     @Override
-    public UserInfo find(int id) {
+    public Object find(int id) {
         return null;
     }
 }

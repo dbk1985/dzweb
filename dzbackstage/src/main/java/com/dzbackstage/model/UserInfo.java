@@ -17,7 +17,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "account")
-public class UserInfo {
+public class UserInfo implements BKbean {
     /** 用户id编号 */
     @Id
     @GeneratedValue (generator = "increment")
@@ -38,14 +38,6 @@ public class UserInfo {
 
     public UserInfo() {
         // this form used by Hibernate
-    }
-
-    public UserInfo(String title, Date date) {
-        // for application use, to create new events
-        this.userName = title;
-        this.regTime = date;
-        this.password = "123456";
-        this.email = "adfadf@email.com";
     }
 
     public long getId() {

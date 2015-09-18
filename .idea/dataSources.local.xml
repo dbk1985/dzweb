@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - dzeep@localhost" uuid="032c5db4-749a-4e5a-a70f-281dc17e381d">
-      <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
-      <user-name>root</user-name>
-    </data-source>
+    <data-source name="MySQL - dzeep@localhost" uuid="032c5db4-749a-4e5a-a70f-281dc17e381d" />
   </component>
 </project>

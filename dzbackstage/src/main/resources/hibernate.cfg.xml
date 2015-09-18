@@ -10,16 +10,24 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <!-- 数据库连接配置 -->
+        <!-- 配置Mysql数据库连接 -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url"> jdbc:mysql://localhost:3307/dzeep</property>
         <property name="connection.username">root</property>
         <property name="connection.password">123456</property>
 
+        <!-- 配置H2数据库连接 -->
+        <!--<property name="connection.driver_class">org.h2.Driver</property>-->
+        <!--<property name="connection.url">jdbc:h2:mem:dzeep;DB_CLOSE_DELAY=-1;MVCC=TRUE</property>-->
+        <!--<property name="connection.username">sa</property>-->
+        <!--<property name="connection.password"></property>-->
+
         <!-- 为true表示将Hibernate发送给数据库的sql显示出来  -->
         <property name="show_sql">true</property>
         <!-- SQL方言，这边设定的是MySQL -->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- SQL方言，设定为H2 -->
+        <!--<property name="dialect">org.hibernate.dialect.H2Dialect</property>-->
         <!--一次读的数据库记录数 -->
         <property name="jdbc.fetch_size">50</property>
         <!--设定对数据库进行批量删除 -->
@@ -38,6 +46,10 @@
         <property name="connection.characterEncoding">UTF-8</property>
 
         <!-- 映射文件 -->
-        <!--<mapping resource="com/dzbackstage/model/UserInfo.hbm.xml"/>-->
+        <!-- 通过xml配置的方式来映射 -->
+        <!--<mapping resource="com/dzbackstage/model/System.hbm.xml"/>-->
+        <!-- 通过注解方式来映射 -->
+        <mapping class="com.dzbackstage.model.UserInfo"/>
+
     </session-factory>
 </hibernate-configuration>

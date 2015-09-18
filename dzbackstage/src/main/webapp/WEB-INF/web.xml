@@ -3,6 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <display-name>后台管理系统</display-name>
+
+    <context-param>
+        <!-- 指定spring context信息未知，默认的位置在classpath下的applicationContext.xml  -->
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:springApplicationContext.xml</param-value>
+    </context-param>
+
+    <!-- 如果使用hibernate需要包含该文件 -->
+    <filter>
+        <filter-name>Spring-OpenEntityManagerInViewFilter</filter-name>
+        <filter-class>org.springframework.orm.hibernate5.support.OpenSessionInViewFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Spring-OpenEntityManagerInViewFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- struts2配置 -->
     <filter>
         <filter-name>struts2</filter-name>
         <filter-class>com.dzeep.dzframe.filter.DZFilter</filter-class>
@@ -12,7 +31,12 @@
         <filter-name>struts2</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    
+
+    <!-- 添加Spring监听器 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
     <welcome-file-list>
         <welcome-file>/login.jsp</welcome-file>
     </welcome-file-list>

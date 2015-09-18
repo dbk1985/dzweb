@@ -14,6 +14,7 @@ import java.util.List;
 
 /**
  * Created by tb on 15/9/17.
+ * 业务处理层
  */
 public abstract class BKService<T> {
     private static SessionFactory sessionFactory = null;

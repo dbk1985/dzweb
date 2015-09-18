@@ -6,7 +6,17 @@
 
 <struts>
         <constant name="struts.devMode" value="true"/>
+        <!-- Global message resource; Otherwise you will have seperate message resource for each Action -->
+        <constant name="struts.custom.i18n.resources" value="messages" />
+        <!--
+            This is important if you are planning to have slashes in Action URLs
+            e.g. In this demo, employee is deleted using URL /delete/10
+            This this is set to false; then struts will try to find mapping for
+            URL "/10" instaed of "/delete/10"
+         -->
+        <!--<constant name="struts.enable.SlashesInActionNames" value="true"/>-->
         <package name="dzbackstage" extends="struts-default">
+                <!-- 指定action拦截器 -->
                 <interceptors>
                         <interceptor name="authentication" class="com.dzbackstage.interceptor.DZAuthenticationInterceptor"></interceptor>
                 </interceptors>

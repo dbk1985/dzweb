@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.dzbackstage.model">
+        <class name="System" table="system">
+                <id name="id" column="id">
+                        <generator class="native"/>     <!-- 字段自增 -->
+                </id>
+                <property name="title" column="title" not-null="true"></property>
+                <property name="host" column="host" not-null="true"></property>
+                <property name="addTime" column="add_time" type="timestamp" not-null="true"/>
+        </class>
+</hibernate-mapping>
