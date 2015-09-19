@@ -1,15 +1,5 @@
 package com.dzbackstage.service;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
 import java.util.List;
 
 /**
@@ -17,9 +7,10 @@ import java.util.List;
  * 业务处理层
  */
 public abstract class BKService<T> {
+    /*
     private static SessionFactory sessionFactory = null;
     private static EntityManagerFactory entityManagerFactory = null;
-
+    */
     abstract public List<T> findAll();
 
     abstract public void save(T t);
@@ -29,7 +20,7 @@ public abstract class BKService<T> {
     abstract public T find(int id);
 
     /** ORM模式 */
-    protected static Session openSession() {
+   /* protected static Session openSession() {
         if (sessionFactory == null) {
             final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
                     .configure() // configures settings from hibernate.cfg.xml
@@ -58,8 +49,9 @@ public abstract class BKService<T> {
     protected static Session openSessionWithConfig(){
         return null;
     }
-
+    */
     /** JPA模式 */
+    /*
     protected static EntityManager openEntityManager(String persistenceUnitName) {
         if (entityManagerFactory == null) {
             entityManagerFactory = Persistence.createEntityManagerFactory(persistenceUnitName);
@@ -73,4 +65,5 @@ public abstract class BKService<T> {
         entityManager.persist( o );
         entityManager.getTransaction().commit();
     }
+    */
 }

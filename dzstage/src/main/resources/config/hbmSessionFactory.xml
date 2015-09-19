@@ -1,0 +1,16 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- 直接使用Hibernate 配置文件来配置hibernate session factory -->
+    <bean id="sessionFactoryBean" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="configLocation" value="hibernate.cfg.xml"/>
+        <!-- 使用注解的方式来映射相应的数据模型 -->
+        <property name="annotatedClasses">
+            <list>
+                <value>com.dzeep.dzstage.model.UserInfo</value>
+            </list>
+        </property>
+    </bean>
+</beans>

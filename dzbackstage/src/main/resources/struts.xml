@@ -18,7 +18,7 @@
         <package name="dzbackstage" extends="struts-default">
                 <!-- 指定action拦截器 -->
                 <interceptors>
-                        <interceptor name="authentication" class="com.dzbackstage.interceptor.DZAuthenticationInterceptor"></interceptor>
+                    <interceptor name="authentication" class="com.dzbackstage.interceptor.DZAuthenticationInterceptor"/>
                 </interceptors>
 
                 <!-- 定义全局的result -->
@@ -26,14 +26,15 @@
                     <result name="login">/login.jsp</result>
                 </global-results>
 
-                <action name="login" class="com.dzbackstage.controller.user.BKLogin">
-                        <result name="success">/index.jsp</result>
+                <!-- class="sLogin" sLogin为spring的bean对应的name属性值 -->
+                <action name="login" class="sLogin" method="execute">
+                    <result name="success">/index.jsp</result>
                 </action>
 
-                <action name="index" class="com.dzbackstage.controller.BKIndex" method="execute">
-                        <!-- 使用拦截器 -->
-                        <interceptor-ref name="authentication"/>
-                        <result name="success">/index.jsp</result>
+                <action name="index" class="sIndex" method="execute">
+                    <!-- 使用拦截器 -->
+                    <interceptor-ref name="authentication"/>
+                    <result name="success">/index.jsp</result>
                 </action>
 
         </package>

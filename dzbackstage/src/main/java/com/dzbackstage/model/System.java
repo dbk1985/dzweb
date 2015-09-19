@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by tb on 15/9/18.
  */
-public class System implements BKbean{
+public class System {
     private long id;
     private String title;
     private String host;

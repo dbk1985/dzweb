@@ -5,22 +5,30 @@
     <!-- 数据库配置信位置 -->
     <import resource="dataSource.xml"/>
 
-    <!-- Configure hibernate session factory -->
+    <!-- 使用DataSource来配置hibernate session factory -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-        <property name="dataSource" ref="dataSource" />
-        <property name="configLocation">
-            <value>classpath:hibernate.cfg.xml</value>
-        </property>
+        <!-- 属性注入 就是对类成员赋值 -->
+        <property name="dataSource" ref="dataSource"/> <!-- 通过引用的方式赋值 -->
+
+        <!-- hibernate 属性配置 -->
         <property name="hibernateProperties">
             <props>
-                <prop key="hibernate.dialect">${jdbc.dialect}</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
                 <prop key="hibernate.show_sql">true</prop>
             </props>
         </property>
+        <!-- mappingResouces属性用来列出全部映射数据模型 -->
+        <!--<property name="mappingLocations" value="classpath:beans/*.hbm.xml"/>-->
         <property name="mappingResources">
             <list>
-                <value>com/dzbackstage/model/System.hbm.xml</value>
+                <value>beans/userInfo.hbm.xml</value>
+                <value>beans/system.hbm.xml</value>
+                <value>beans/employee.hbm.xml</value>
             </list>
         </property>
+    </bean>
+
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 </beans>

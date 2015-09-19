@@ -8,7 +8,6 @@ import java.util.List;
  * Created by tb on 15/9/18.
  */
 public abstract class BKDao<T> extends HibernateDaoSupport{
-
     abstract public List<T> findAll();
 
     abstract public void save(T t);

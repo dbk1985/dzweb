@@ -47,9 +47,9 @@
 
         <!-- 映射文件 -->
         <!-- 通过xml配置的方式来映射 -->
-        <!--<mapping resource="com/dzbackstage/model/System.hbm.xml"/>-->
+        <!--<mapping resource="com/dzbackstage/model/system.hbm.xml"/>-->
         <!-- 通过注解方式来映射 -->
-        <mapping class="com.dzbackstage.model.UserInfo"/>
+        <!--<mapping class="com.dzbackstage.model.UserInfo"/>-->
 
     </session-factory>
 </hibernate-configuration>

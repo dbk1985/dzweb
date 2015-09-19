@@ -1,39 +1,19 @@
 package com.dzbackstage.model;
 
-import org.hibernate.annotations.GenericGenerator;
-
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
 import java.util.Date;
-
 /**
  * Created by tb on 15/9/17.
  */
-
-@Entity
-@Table(name = "account")
-public class UserInfo implements BKbean {
+public class UserInfo {
     /** 用户id编号 */
-    @Id
-    @GeneratedValue (generator = "increment")
-    @GenericGenerator(name="increment", strategy = "increment")
-    @Column(name = "id")
     private long id;
     /** 用户名 */
-    @Column(name = "user_name")
     private String userName;
     /** 用户密码 */
     private String password;
     /** 邮箱地址 */
     private String email;
     /** 注册时间 */
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "reg_time")
     private Date regTime;
 
     public UserInfo() {

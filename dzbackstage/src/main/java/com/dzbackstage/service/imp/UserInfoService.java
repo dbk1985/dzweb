@@ -14,7 +14,6 @@ public class UserInfoService extends BKService{
     public void setUserInfoDao(UserInfoDao userInfoDao) {
         this.userInfoDao = userInfoDao;
     }
-
     @Override
     public List<UserInfoService> findAll() {
         return null;

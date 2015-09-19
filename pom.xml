@@ -16,7 +16,8 @@
         <jdkVersion>1.8</jdkVersion>
         <currentVersion>${project.version}</currentVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <applicationContextPath>/Applications/apache-tomcat-8.0.24/webapps</applicationContextPath>
+        <!-- 资源输出位置 -->
+        <applicationContextPath>/Applications/tomcat-7.0.64/webapps</applicationContextPath>
     </properties>
     <modules>
         <module>dzframe</module>

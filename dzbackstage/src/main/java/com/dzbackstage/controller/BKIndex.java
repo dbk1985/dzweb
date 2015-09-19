@@ -1,28 +1,11 @@
 package com.dzbackstage.controller;
 
-import com.dzbackstage.model.UserInfo;
-import com.dzbackstage.service.imp.UserInfoService;
 import com.dzeep.dzframe.controller.DZController;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-
-import java.util.Date;
 
 /**
  * Created by fighting on 15/9/16.
  */
 public class BKIndex extends DZController{
-
-    private static SessionFactory sessionFactory = null;
-    private UserInfoService userInfoService;
-
-    public void setUserInfoService(UserInfoService userInfoService) {
-        this.userInfoService = userInfoService;
-    }
-
     @Override
     public String execute() throws Exception {
 //
