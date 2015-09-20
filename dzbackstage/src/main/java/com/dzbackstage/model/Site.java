@@ -3,7 +3,7 @@ package com.dzbackstage.model;
 /**
  * Created by fighting on 15/9/19.
  */
-public class Employee {
+public class Site {
     private Integer id;
     private String firstname;
     private String lastname;

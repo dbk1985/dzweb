@@ -1,13 +1,13 @@
-package com.dzbackstage.dao.imp;
+package com.dzbackstage.service.imp;
 
-import com.dzbackstage.dao.BKDao;
+import com.dzbackstage.service.BKService;
 
 import java.util.List;
 
 /**
  * Created by fighting on 15/9/19.
  */
-public class EmployeeDao extends BKDao{
+public class SiteService extends BKService{
     @Override
     public List findAll() {
         return null;
@@ -15,6 +15,7 @@ public class EmployeeDao extends BKDao{
 
     @Override
     public void save(Object o) {
+
     }
 
     @Override
