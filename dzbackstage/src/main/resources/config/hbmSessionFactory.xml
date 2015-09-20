@@ -18,12 +18,12 @@
             </props>
         </property>
         <!-- mappingResouces属性用来列出全部映射数据模型 -->
-        <!--<property name="mappingLocations" value="classpath:beans/*.hbm.xml"/>-->
+        <!--<property name="mappingLocations" value="classpath:hmaps/*.hbm.xml"/>-->
         <property name="mappingResources">
             <list>
-                <value>beans/userInfo.hbm.xml</value>
-                <value>beans/system.hbm.xml</value>
-                <value>beans/employee.hbm.xml</value>
+                <value>hmaps/userInfo.hbm.xml</value>
+                <value>hmaps/system.hbm.xml</value>
+                <value>hmaps/site.hbm.xml</value>
             </list>
         </property>
     </bean>

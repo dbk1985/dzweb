@@ -1,6 +1,7 @@
 package com.dzbackstage.service.imp;
 
 import com.dzbackstage.dao.imp.UserInfoDao;
+import com.dzbackstage.model.UserInfo;
 import com.dzbackstage.service.BKService;
 
 import java.util.List;
@@ -21,7 +22,7 @@ public class UserInfoService extends BKService{
 
     @Override
     public void save(Object o) {
-
+        userInfoDao.save(o);
     }
 
     @Override
@@ -30,7 +31,7 @@ public class UserInfoService extends BKService{
     }
 
     @Override
-    public UserInfoService find(int id) {
+    public UserInfo find(int id) {
         return null;
     }
 }

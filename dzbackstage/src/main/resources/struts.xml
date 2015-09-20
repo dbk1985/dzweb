@@ -18,7 +18,7 @@
         <package name="dzbackstage" extends="struts-default">
                 <!-- 指定action拦截器 -->
                 <interceptors>
-                    <interceptor name="authentication" class="com.dzbackstage.interceptor.DZAuthenticationInterceptor"/>
+                    <interceptor name="authentication" class="com.dzbackstage.interceptor.BKAuthenticationInterceptor"/>
                 </interceptors>
 
                 <!-- 定义全局的result -->

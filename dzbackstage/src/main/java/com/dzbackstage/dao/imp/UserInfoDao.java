@@ -1,6 +1,7 @@
 package com.dzbackstage.dao.imp;
 
 import com.dzbackstage.dao.BKDao;
+import com.dzbackstage.model.UserInfo;
 
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class UserInfoDao extends BKDao{
 
     @Override
     public void save(Object o) {
-
+        currentSession().save(o);
     }
 
     @Override
@@ -26,7 +27,7 @@ public class UserInfoDao extends BKDao{
     }
 
     @Override
-    public Object find(int id) {
+    public UserInfo find(int id) {
         return null;
     }
 }

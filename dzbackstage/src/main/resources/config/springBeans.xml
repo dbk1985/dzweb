@@ -2,18 +2,31 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--This bean has been referred fron struts.xml file; So type it correctly; -->
+    <!-- 用户登录 -->
     <bean id="userInfoDao" class="com.dzbackstage.dao.imp.UserInfoDao">
         <property name="hibernateTemplate" ref="hibernateTemplate"/>
     </bean>
     <bean id="userInfoService" class="com.dzbackstage.service.imp.UserInfoService">
         <property name="userInfoDao" ref="userInfoDao"/>
     </bean>
+    <!--This bean has been referred fron struts.xml file; So type it correctly; -->
+    <bean name="sLogin" class="com.dzbackstage.controller.user.BKLogin" scope="prototype">
+        <property name="userInfoService" ref="userInfoService"/>
+    </bean>
+    <!-- 站点首页 -->
     <!-- Make scope prototype; This is really important. scope区域prototype表示每次都创建一个信息的对象 name的值作为struts的class -->
     <bean name="sIndex" class="com.dzbackstage.controller.BKIndex" scope="prototype">
 
     </bean>
-    <bean name="sLogin" class="com.dzbackstage.controller.user.BKLogin" scope="prototype">
-        <property name="userInfoService" ref="userInfoService"/>
+
+    <!-- 站点信息页 -->
+    <bean id="siteDao" class="com.dzbackstage.dao.imp.SiteDao">
+        <property name="hibernateTemplate" ref="hibernateTemplate"/>
+    </bean>
+    <bean id="siteService" class="com.dzbackstage.service.imp.SiteService">
+        <property name="siteDao" ref="siteDao"/>
+    </bean>
+    <bean name="sSite" class="com.dzbackstage.controller.site.siteInfo">
+        <property name="siteService" ref="siteService"/>
     </bean>
 </beans>

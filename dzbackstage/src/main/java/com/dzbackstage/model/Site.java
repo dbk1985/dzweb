@@ -4,49 +4,73 @@ package com.dzbackstage.model;
  * Created by fighting on 15/9/19.
  */
 public class Site {
-    private Integer id;
-    private String firstname;
-    private String lastname;
-    private String email;
-    private String telephone;
+    private Long id;
+    /** 网站名称 */
+    private String title;
+    /** 网站地址 */
+    private String siteUrl;
+    /** 版权信息 */
+    private String copyRight;
+    /** 站点关键字描述 */
+    private String keywords;
+    /** 网站描述 */
+    private String desc;
+    /** 站点备案号 */
+    private String webSiteRecordNumber;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getTitle() {
+        return title;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getSiteUrl() {
+        return siteUrl;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setSiteUrl(String siteUrl) {
+        this.siteUrl = siteUrl;
     }
 
-    public String getEmail() {
-        return email;
+    public String getCopyRight() {
+        return copyRight;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCopyRight(String copyRight) {
+        this.copyRight = copyRight;
     }
 
-    public String getTelephone() {
-        return telephone;
+    public String getKeywords() {
+        return keywords;
     }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
+    public void setKeywords(String keywords) {
+        this.keywords = keywords;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public String getWebSiteRecordNumber() {
+        return webSiteRecordNumber;
+    }
+
+    public void setWebSiteRecordNumber(String webSiteRecordNumber) {
+        this.webSiteRecordNumber = webSiteRecordNumber;
     }
 }

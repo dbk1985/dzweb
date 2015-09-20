@@ -3,8 +3,15 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.dzbackstage.model">
-    <class name="com.dzbackstage.model.Site" table="site">
+    <class name="Site" table="site">
+        <id name="id" column="id" type="long">
+            <generator class="native"/>
+        </id>
         <property name="title" not-null="true"/>
         <property name="siteUrl" column="site_url" not-null="true"/>
+        <property name="copyRight" column="copy_right"/>
+        <property name="keywords"/>
+        <property name="desc"/>
+        <property name="webSiteRecordNumber" column="site_number"/>
     </class>
 </hibernate-mapping>

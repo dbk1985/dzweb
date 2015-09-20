@@ -1,6 +1,7 @@
 package com.dzbackstage.dao.imp;
 
 import com.dzbackstage.dao.BKDao;
+import com.dzbackstage.model.Site;
 
 import java.util.List;
 
@@ -23,7 +24,7 @@ public class SiteDao extends BKDao{
     }
 
     @Override
-    public Object find(int id) {
+    public Site find(int id) {
         return null;
     }
 }
