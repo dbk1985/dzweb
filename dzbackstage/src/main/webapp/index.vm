@@ -5,7 +5,6 @@
   Time: 下午4:21
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -14,5 +13,18 @@
 </head>
 <body>
 <h1>index</h1>
+    #if( $XHTML )
+        #set( $br = "<br />" )
+    #else
+        #set( $br = "<br>" )
+    #end
+
+    $br
+    $br
+
+Here we use a custom tool: $toytool.message
+
+    $br
+    $br
 </body>
 </html>
