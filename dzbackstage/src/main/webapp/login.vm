@@ -1,10 +1,10 @@
-<%--
+#**
   Created by IntelliJ IDEA.
   User: fighting
   Date: 15/9/14
   Time: 上午7:56
   To change this template use File | Settings | File Templates.
---%>
+*#
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -13,7 +13,8 @@
   <meta name="description" content="">
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title></title>
+  #set($title="用户登录")
+  <title>$title</title>
   <link rel="icon" href="">
   <!-- 新 Bootstrap 核心 CSS 文件 -->
   <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">

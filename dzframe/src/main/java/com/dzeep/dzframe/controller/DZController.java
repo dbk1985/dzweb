@@ -19,6 +19,7 @@ public class DZController extends ActionSupport implements ServletContextAware,S
     private HttpServletRequest request;
     private HttpServletResponse response;
     private Map session;
+    private String title;
 
     @Override
     public void setServletContext(ServletContext context) {
@@ -54,5 +55,13 @@ public class DZController extends ActionSupport implements ServletContextAware,S
 
     public Map getSession() {
         return session;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

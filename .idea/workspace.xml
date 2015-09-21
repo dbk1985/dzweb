@@ -2,26 +2,529 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c7a2fc-cab5-4f9a-b06c-76ba7379e509" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/velocity-toolbox.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/tools.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_core_1_3_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_taglib_1_3_10.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_taglib_1_3_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_tiles_1_3_10.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_tiles_1_3_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_core_1_3_10.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/index.vm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/login.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/dzbackstage.iml" afterPath="$PROJECT_DIR$/dzbackstage/dzbackstage.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dzbackstage_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dzbackstage_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzframe/dzframe.iml" afterPath="$PROJECT_DIR$/dzframe/dzframe.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzmobile/dzmobile.iml" afterPath="$PROJECT_DIR$/dzmobile/dzmobile.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dzmobile_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dzmobile_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzstage/dzstage.iml" afterPath="$PROJECT_DIR$/dzstage/dzstage.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dzstage_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dzstage_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzframe/pom.xml" afterPath="$PROJECT_DIR$/dzframe/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/dzbackstage/src/main/resources/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/velocity.properties" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/velocity.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/web.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/appveyor.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/internal-tasks/bump.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/internal-tasks/subgrunt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/cli.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/event.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/fail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/help.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/option.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/task.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/template.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/lib/util/task.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/.bin/cake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/.bin/coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/.bin/js-yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/.bin/nopt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/.bin/rimraf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/.bin/which" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/lib/async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/async/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/bin/cake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/bin/coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/extras/jsl.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/cake.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/coffee-script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/command.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/grammar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/helpers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/lexer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/nodes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/optparse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/repl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/rewriter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/scope.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/ReadMe.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/colors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/example.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/themes/winston-dark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/themes/winston-light.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/lib/dateformat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/test/test_weekofyear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/test/test_weekofyear.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/eventemitter2/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/eventemitter2/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/eventemitter2/lib/eventemitter2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/eventemitter2/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/lib/exit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/exit_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/10-stderr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/10-stdout-stderr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/10-stdout.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/100-stderr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/100-stdout-stderr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/100-stdout.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/1000-stderr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/1000-stdout-stderr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/1000-stdout.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/create-files.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/log-broken.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/exit/test/fixtures/log.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/lib/findup-sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/examples/g.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/examples/usr-local.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/glob.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/inherits/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/inherits/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/inherits/inherits.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/inherits/inherits_browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/inherits/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/inherits/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/minimatch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/CONTRIBUTORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/foreach.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/memory-leak.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund/bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund/sigmund.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/node_modules/sigmund/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/test/brace-expand.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/test/caching.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/test/defaults.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/test/extglob-ending-with-state-char.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/00-setup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/bash-comparison.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/bash-results.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/cwd-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/globstar-match.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/mark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/new-glob-optional-options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/nocase-nomagic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/pause-resume.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/readme-issue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/root-nomount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/root.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/stat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/zz-cleanup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/dist/lodash.compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/dist/lodash.compat.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/dist/lodash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/dist/lodash.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/dist/lodash.underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/dist/lodash.underscore.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/lodash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/node_modules/lodash/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/test/findup-sync_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/test/fixtures/a.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/test/fixtures/a/b/bar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/test/fixtures/a/foo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/test/fixtures/aaa.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/getobject/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/getobject/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/getobject/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/getobject/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/getobject/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/getobject/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/getobject/lib/getobject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/getobject/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/getobject/test/namespace_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/examples/g.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/examples/usr-local.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/glob.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/graceful-fs/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/graceful-fs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/graceful-fs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/graceful-fs/graceful-fs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/graceful-fs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/graceful-fs/test/open.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/graceful-fs/test/ulimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/inherits/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/inherits/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/inherits/inherits.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/node_modules/inherits/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/00-setup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/bash-comparison.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/bash-results.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/cwd-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/mark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/nocase-nomagic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/pause-resume.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/root-nomount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/root.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/zz-cleanup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/examples.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/grunt-legacy-log-utils/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/grunt-legacy-log-utils/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/grunt-legacy-log-utils/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/grunt-legacy-log-utils/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/grunt-legacy-log-utils/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/grunt-legacy-log-utils/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/grunt-legacy-log-utils/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/grunt-legacy-log-utils/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/grunt-legacy-log-utils/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/dist/lodash.compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/dist/lodash.compat.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/dist/lodash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/dist/lodash.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/dist/lodash.underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/dist/lodash.underscore.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/lodash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/lodash/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/dist/underscore.string.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/lib/underscore.string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/libpeerconnection.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/run-qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/strings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/strings_standalone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_standalone.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/arrays.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/chaining.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/collections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/objects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/vendor/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/vendor/jslitmus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/Gruntfile-execArgv-child.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/Gruntfile-execArgv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/Gruntfile-print-text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/exec.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/exec.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/spawn-multibyte.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/spawn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-util/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/child.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/dist/ba-hooker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/dist/ba-hooker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/grunt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/lib/hooker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/parent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/hooker/test/hooker_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/encodings/big5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/encodings/gbk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/encodings/singlebyte.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/encodings/table/big5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/encodings/table/gbk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/generation/generate-big5-table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/generation/generate-singlebyte.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/test/big5-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/test/big5File.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/test/cyrillic-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/test/gbk-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/test/gbkFile.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/test/greek-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/test/main-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/test/performance.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/test/turkish-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/bin/js-yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/examples/custom_types.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/examples/custom_types.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/examples/dumper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/examples/dumper.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/examples/sample_document.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/examples/sample_document.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/dumper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/exception.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/loader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/mark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/require.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/schema.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/schema/default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/schema/minimal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/schema/safe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/binary.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/bool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/float.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/int.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/js/function.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/js/regexp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/js/undefined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/merge.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/null.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/omap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/pairs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/seq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/str.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/timestamp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/.bin/esparse" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/.bin/esvalidate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/arguments.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/choice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/help.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/nargs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/parents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/prefix_chars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/sub_commands.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/sum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/testformatters.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/append.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/append/constant.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/count.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/help.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/store/constant.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/store/false.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/store/true.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/subparsers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/version.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action_container.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/argparse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/argument/error.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/argument/exclusive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/argument/group.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/help/added_formatters.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/help/formatter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/namespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/foo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/lib/underscore.string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/libpeerconnection.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/bin/esparse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/bin/esvalidate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/esprima.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/test/compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/test/reflect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/test/run.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/test/runner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/esprima/test/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/lodash/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/lodash/lodash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/lodash/lodash.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/lodash/lodash.underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/lodash/lodash.underscore.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/lodash/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/minimatch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/CONTRIBUTORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/test/foreach.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/test/memory-leak.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/lru-cache/test/serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/sigmund/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/sigmund/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/sigmund/bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/sigmund/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/sigmund/sigmund.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/node_modules/sigmund/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/test/brace-expand.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/test/caching.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/test/defaults.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/minimatch/test/extglob-ending-with-state-char.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/bin/nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/examples/my-program.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/lib/nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/abbrev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/node_modules/abbrev/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/nopt/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/bin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/rimraf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/test/run.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/test/setup.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/test/test-async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/test/test-sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/dist/underscore.string.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/lib/underscore.string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/run-qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/strings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/strings_standalone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_standalone.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/arrays.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/chaining.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/collections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/objects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/temp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/temp_tests.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/vendor/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/vendor/jslitmus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_underscore/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/which/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/which/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/which/bin/which" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/which/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/node_modules/which/which.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/grunt/package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/BKDao.java" afterPath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/BKDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/BKIndex.java" afterPath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/BKIndex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/user/BKLogin.java" afterPath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/user/BKLogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzframe/src/main/java/com/dzeep/dzframe/controller/DZController.java" afterPath="$PROJECT_DIR$/dzframe/src/main/java/com/dzeep/dzframe/controller/DZController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/model/UserInfo.java" afterPath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/model/UserInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java" afterPath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/imp/UserInfoService.java" afterPath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/imp/UserInfoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/META-INF/dbcfg.properties" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/META-INF/dbcfg.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/index.vm" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/index.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/login.vm" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/login.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/resources/hmaps/userInfo.hbm.xml" afterPath="$PROJECT_DIR$/dzbackstage/src/main/resources/hmaps/userInfo.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dzweb.iws" />
@@ -70,7 +573,46 @@
     <favorites_list name="dzweb" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="login.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/webapp/login.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.3076923">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/webapp/index.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.846153">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfoDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1509434">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <folding>
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <marker date="1442848547000" expanded="true" signature="772:816" placeholder="SELECT * FRO..account..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,7 +638,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/User.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfo.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/BKDao.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/T.java" />
@@ -106,7 +647,6 @@
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/model/Employee.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/beans/employee.hbm.xml" />
         <option value="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/model/UserInfo.java" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/model/UserInfo.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/beans/userinfo.hbm.xml" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/model/System.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/imp/EmployeeService.java" />
@@ -115,9 +655,7 @@
         <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/config/dataSource.xml" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/BKService.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/springApplicationContext.xml" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/BKIndex.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/META-INF/dbcfg.properties" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/lessFiles/mian.less" />
         <option value="$PROJECT_DIR$/dzbackstage/lessFiles/mian.less" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/config/hbmSessionFactory.xml" />
@@ -127,26 +665,30 @@
         <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/config/springBeans.xml" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/model/Site.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/hmaps/site.hbm.xml" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/hmaps/userInfo.hbm.xml" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/imp/UserInfoService.java" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/BKDao.java" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/SiteDao.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/interceptor/DZAuthenticationInterceptor.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/interceptor/BKInterceptor.java" />
         <option value="$PROJECT_DIR$/dzbackstage/lessFiles/main.less" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/user/BKLogin.java" />
         <option value="$PROJECT_DIR$/dzbackstage/lessFiles/package.json" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/login.ftl" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/velocity-tools.xml" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/velocity.properties" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/dzframe/pom.xml" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/toolbox.xml" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/index.vm" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/BKIndex.java" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/dzframe/src/main/java/com/dzeep/dzframe/controller/DZController.java" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/imp/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/META-INF/dbcfg.properties" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/model/UserInfo.java" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/resources/hmaps/userInfo.hbm.xml" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/user/BKLogin.java" />
         <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/login.vm" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/BKDao.java" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/webapp/index.vm" />
+        <option value="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java" />
       </list>
     </option>
   </component>
@@ -264,112 +806,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="deweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzbackstage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzbackstage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzbackstage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzbackstage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzbackstage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1002,12 +1438,12 @@
       <workItem from="1442703765461" duration="12298000" />
       <workItem from="1442728713672" duration="6569000" />
       <workItem from="1442761596112" duration="1048000" />
-      <workItem from="1442831910990" duration="4528000" />
+      <workItem from="1442831910990" duration="11607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155236000" />
+    <option name="totallyTimeSpent" value="162315000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1027,16 +1463,16 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30503145" sideWeight="0.5129241" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30398324" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15508886" sideWeight="0.49580714" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4056604" sideWeight="0.51615506" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30398324" sideWeight="0.49030694" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15508886" sideWeight="0.49580714" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.49676898" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4056604" sideWeight="0.48707592" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4056604" sideWeight="0.4838449" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.49676898" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28271407" sideWeight="0.5041929" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2092084" sideWeight="0.49580714" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26009694" sideWeight="0.49580714" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26979" sideWeight="0.5060241" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1068,19 +1504,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="uName" language="JAVA" custom="" />
+        <watch expression="o" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
@@ -1089,91 +1518,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.1.RELEASE/spring-beans-4.2.1.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3703704">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.1.RELEASE/spring-context-4.2.1.RELEASE.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.037037">
-          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.1.RELEASE/spring-context-4.2.1.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.037037">
-          <caret line="269" column="0" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.1.RELEASE/spring-orm-4.2.1.RELEASE.jar!/org/springframework/orm/hibernate5/HibernateOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08008899">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.1.RELEASE/spring-orm-4.2.1.RELEASE.jar!/org/springframework/orm/hibernate5/HibernateTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12013348">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.2.1.RELEASE/spring-tx-4.2.1.RELEASE.jar!/org/springframework/dao/support/DaoSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10011123">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.1.RELEASE/spring-orm-4.2.1.RELEASE.jar!/org/springframework/orm/hibernate5/support/HibernateDaoSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12013348">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzstage/src/main/resources/config/hbmSessionFactory.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36923078">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.2.1.RELEASE/spring-jdbc-4.2.1.RELEASE.jar!/org/springframework/jdbc/datasource/DelegatingDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final.jar!/org/hibernate/cfg/annotations/reflection/JPAMetadataProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12013348">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.1.RELEASE/spring-orm-4.2.1.RELEASE.jar!/org/springframework/orm/hibernate5/LocalSessionFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22024472">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.1.RELEASE/spring-orm-4.2.1.RELEASE.jar!/org/springframework/orm/hibernate3/LocalSessionFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06006674">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.1.RELEASE/spring-orm-4.2.1.RELEASE-sources.jar!/org/springframework/orm/hibernate5/LocalSessionFactoryBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1186,13 +1530,6 @@
         <state vertical-scroll-proportion="0.6025918">
           <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/webapp/META-INF/dbcfg.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.021598272">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1261,92 +1598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/resources/hmaps/userInfo.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15118791">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/model/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30237582">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/BKDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15118791">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/imp/SiteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36717063">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/imp/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34557235">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final.jar!/org/hibernate/SessionFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.666667">
           <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final.jar!/org/hibernate/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0266964">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.1.RELEASE/spring-orm-4.2.1.RELEASE-sources.jar!/org/springframework/orm/hibernate5/support/HibernateDaoSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78401726">
-          <caret line="128" column="42" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/SiteDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28077754">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3887689">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#368#369#0" expanded="false" />
-            <element signature="e#408#409#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/BKIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzframe/src/main/java/com/dzeep/dzframe/controller/DZController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1385,13 +1640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/user/BKLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.064794816">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar!/org/apache/velocity/tools/view/VelocityView.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1404,14 +1652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13348165">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5561735">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1442,25 +1682,257 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/velocity-toolbox.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6307978">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3337041">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea14/extLibs/nodejs-v4.1.0-src/core-modules-sources/lib/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzframe/src/main/java/com/dzeep/dzframe/controller/DZController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73434126">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1674#1675#0" expanded="false" />
+            <element signature="e#1708#1709#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28725702">
+          <caret line="143" column="31" selection-start-line="143" selection-start-column="31" selection-end-line="143" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.259177">
+          <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final.jar!/org/hibernate/SQLQuery.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4444447">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final.jar!/org/hibernate/SharedSessionContract.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.111111">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final.jar!/org/hibernate/Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.555555">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/webapp/META-INF/dbcfg.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031446543">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.1.RELEASE/spring-orm-4.2.1.RELEASE-sources.jar!/org/springframework/orm/hibernate5/HibernateTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.341253">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final-sources.jar!/org/hibernate/transform/ResultTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28077754">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.1.RELEASE/spring-beans-4.2.1.RELEASE-sources.jar!/org/springframework/beans/factory/InitializingBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17278618">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.2.1.RELEASE/spring-tx-4.2.1.RELEASE.jar!/org/springframework/dao/support/DaoSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13348165">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/resources/hmaps/userInfo.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22801302">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/model/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21598272">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final-sources.jar!/org/hibernate/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46220303">
+          <caret line="633" column="11" selection-start-line="633" selection-start-column="11" selection-end-line="633" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/SiteDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40880504">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/BKIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/imp/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27672955">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/service/imp/SiteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4025157">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/user/BKLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2166#2167#0" expanded="true" />
+            <element signature="e#2197#2198#0" expanded="true" />
+            <element signature="e#2247#2248#0" expanded="true" />
+            <element signature="e#2287#2288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/webapp/login.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3076923">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final-sources.jar!/org/hibernate/SQLQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3326133">
+          <caret line="169" column="6" selection-start-line="169" selection-start-column="6" selection-end-line="169" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/BKDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19438446">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/webapp/index.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26666668">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state vertical-scroll-proportion="-23.846153">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.1.Final/hibernate-core-5.0.1.Final-sources.jar!/org/hibernate/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6792452">
+          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/webapp/login.vm">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.1.RELEASE/spring-orm-4.2.1.RELEASE-sources.jar!/org/springframework/orm/hibernate5/support/HibernateDaoSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24444444">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.7169811">
+          <caret line="127" column="25" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1509434">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <marker date="1442848547000" expanded="true" signature="772:816" placeholder="SELECT * FRO..account..." />
+          </folding>
         </state>
       </provider>
     </entry>

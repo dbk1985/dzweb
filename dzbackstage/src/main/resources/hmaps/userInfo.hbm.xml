@@ -7,9 +7,9 @@
         <id name="id" column="id">
             <generator class="native"/>     <!-- 字段自增 -->
         </id>
-        <property name="userName" column="u_name" not-null="true"/>
-        <property name="password" column="u_pwd" not-null="true"/>
-        <property name="email" column="u_email"/>
-        <property name="regTime" type="timestamp" column="u_reg_time" not-null="true"/>
+        <property name="userName" not-null="true"/>
+        <property name="password" not-null="true"/>
+        <property name="email" />
+        <property name="regTime" type="timestamp" not-null="true"/>
     </class>
 </hibernate-mapping>

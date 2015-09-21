@@ -9,11 +9,7 @@ import java.util.List;
  */
 public abstract class BKDao<T> extends HibernateDaoSupport{
     abstract public List<T> findAll();
-
     abstract public void save(T t);
-
     abstract public void remove(int id);
-
     abstract public T find(int id);
-
 }

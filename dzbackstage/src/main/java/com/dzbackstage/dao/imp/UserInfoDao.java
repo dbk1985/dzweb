@@ -2,6 +2,9 @@ package com.dzbackstage.dao.imp;
 
 import com.dzbackstage.dao.BKDao;
 import com.dzbackstage.model.UserInfo;
+import org.hibernate.Query;
+import org.hibernate.SQLQuery;
+import org.hibernate.Session;
 
 import java.util.List;
 
@@ -29,5 +32,15 @@ public class UserInfoDao extends BKDao{
     @Override
     public UserInfo find(int id) {
         return null;
+    }
+
+    public UserInfo findByUserName(String uName){
+        Session session = currentSession();
+        Query query = session.createSQLQuery("SELECT * FROM account WHERE userName = :name")
+                .addEntity(UserInfo.class) /** 必需添加否则会出现类型转化异常(Ljava.lang.Object; cannot be cast to xxx)*/
+                .setString("name", uName);
+        UserInfo userInfo = (UserInfo)query.uniqueResult();
+        session.close();
+        return userInfo;
     }
 }

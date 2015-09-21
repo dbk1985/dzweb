@@ -6,8 +6,11 @@ import com.dzeep.dzframe.controller.DZController;
  * Created by fighting on 15/9/16.
  */
 public class BKIndex extends DZController{
+    private  String title;
+
     @Override
     public String execute() throws Exception {
+        setTitle("this is 没有");
 //
 //        final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
 //                .configure() // configures settings from hibernate.cfg.xml
@@ -53,4 +56,11 @@ public class BKIndex extends DZController{
         return LOGIN;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }

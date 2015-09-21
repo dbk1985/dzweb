@@ -12,8 +12,10 @@ public class BKLogin extends DZController {
     public void setUserInfoService(UserInfoService userInfoService) {
         this.userInfoService = userInfoService;
     }
+    private UserInfo userInfo;
     @Override
     public String execute() throws Exception {
+        setTitle("用户登录");
         /**
          * struts获取请求的参数的方法
          * 1、在action中定义一个与参数同名的属性，并设置setter和getter方法，xwork的OGNL会自动把request参数的值设置到类属性中，此时访问请求参数只需要访问类属性即可。
@@ -31,8 +33,8 @@ public class BKLogin extends DZController {
          *    String bookPrice=request.getParameter("bookPrice");
          *
          * */
-        /*String uName = getRequest().getParameter("userName");
-        String password = getRequest().getParameter("password");
+        String uName = getRequest().getParameter("userName");
+        /*String password = getRequest().getParameter("password");
         UserInfo userInfo = new UserInfo();
         userInfo.setUserName(uName);
         userInfo.setPassword(password);
@@ -41,6 +43,18 @@ public class BKLogin extends DZController {
             return LOGIN;
         }
         userInfoService.save(userInfo);*/
+        if (uName == null){
+            return LOGIN;
+        }
+        userInfo = userInfoService.findByUseName(uName);
         return SUCCESS;
+    }
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
     }
 }

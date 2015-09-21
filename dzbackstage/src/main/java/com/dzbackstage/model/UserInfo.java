@@ -50,4 +50,9 @@ public class UserInfo {
     public void setRegTime(Date regTime) {
         this.regTime = regTime;
     }
+
+    @Override
+    public String toString() {
+        return userName;
+    }
 }

@@ -34,4 +34,8 @@ public class UserInfoService extends BKService{
     public UserInfo find(int id) {
         return null;
     }
+
+    public UserInfo findByUseName(String uName){
+        return userInfoDao.findByUserName(uName);
+    }
 }
