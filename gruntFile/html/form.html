@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/dist/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dist/vendor/animate/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="./dist/css/dzp.css">
+    <style type="text/css">
+        .body-container {
+            width: auto;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="body-container">
+    <div class="container" class="animated fadeInRight">
+        <form class="form-inline">
+            <div class="row" style="margin-top: 10px">
+                <div class="row">
+                    <div class="col-md-7 form-group">
+                        <label class="control-label">
+                            <s>*</s>
+                            日期:
+                        </label>
+                        <input type="email" class="form-control input-s" id="exampleInputEmail3" placeholder="Email">
+                    </div>
+                    <div class="col-md-5 form-group">
+                        <label class="control-label">
+                            <s>*</s>
+                            价格:
+                        </label>
+                        <div class="input-group has-success">
+                            <div class="input-group-addon">
+                                <input type="checkbox" aria-label="...">
+                            </div>
+                            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                            <div class="input-group-addon">.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label class="control-label">
+                            <s>*</s>是否QC：
+                        </label>
+                        <div class="input-group">
+                            <label class="radio">
+                                <input type="radio" name="isMerge" value="是"> 是
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="isMerge" value="否" checked="checked" > 否
+                            </label>
+                        </div>
+                        <span class="auxiliary-text">
+                            <i class="fa fa-search">
+                                搜索
+                            </i>
+                            默认“预计入仓时间”至少比“活动时间”早2天
+                            <em class="label">如需QC，则“预计入仓时间”至少比“活动时间”早4天</em>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group has-error">
+                        <label class="control-label">
+                            <s>*</s>
+                            年龄:
+                        </label>
+                        <div class="input-group">
+                                <span class="input-group-addon">
+                                    <input type="checkbox" aria-label="...">
+                                </span>
+                            <input class="form-control" type="text">
+                        </div>
+                            <span class="form-field-error">
+                                <span class="x-icon x-icon-small x-icon-error x-icon-circle">!</span>
+                                <label class="form-field-error-text">不能为空！</label>
+                            </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 form-group">
+                        <label class="control-label">4PL处理订单类型：</label>
+                        <div class="input-group">
+                            <label class="checkbox">
+                                <input type="checkbox" value="零售">零售
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="聚划算" checked="checked">聚划算
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 form-group">
+                        <label class="control-label">上架时间：</label>
+                        <div class="input-group">
+                            <label class="radio">
+                                <input type="radio" name="uptime" value="now" checked="checked">立刻
+                            </label>
+                            <label  class="radio">
+                                <input id="chk" type="radio" name="uptime" value="set">设定
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="uptime" value="inputc">放入仓库
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label class="control-label"><s>*</s>地区：</label>
+                        <div class="input-group">
+                            <select name="" class="select-large">
+                                <option value="">-请选择-</option>
+                                <option>省份</option>
+                                <option value="其他">其他</option>
+                            </select>
+                            <select name="" class="select-normal">
+                                <option value="">-请选择-</option>
+                                <option>省份</option>
+                                <option value="其他">其他</option>
+                            </select>
+                            <select name="" class="select-normal">
+                                <option value="">-请选择-</option>
+                                <option>省份</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="control-label"><s>*</s>描述：</label>
+                        <div class="input-group">
+                            <textarea>adfadfadsfad</textarea>
+                        </div>
+                        <div class="input-group"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="control-label"><s>*</s>爱好:</span>
+                        <select multiple class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label signal-line">
+                    <s>*</s>邮箱:</label>
+                <div class="input-group has-warning input-s-lg">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label"><s>*</s>密码:</label>
+                <div class="input-group has-success">
+                    <span class="input-group-addon">@</span>
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    <span class="input-group-addon">0.00</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <label class="checkbox">
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label"><s>*</s>筛选</label>
+                <div class="input-group">
+                    <select>
+                        <option>按时间排序</option>
+                        <option>按名称排序</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+            </div>
+        </form>
+<div class="row">
+        <form class="form-panel" action="post">
+            <div class="panel-title">
+              <span>
+                <label>报名日期：</label>
+                  <input type="text" class="input-s-lg" >
+                  <label>至</label>
+                  <input type="text" class="input-s-lg ">
+              </span>
+              <span>
+                <label>上阶段审核日期：</label>
+                  <input type="text" class="input-s-lg">
+                  <label>至</label>
+                  <input type="text" class="input-s-lg">
+              </span>
+            </div>
+            <ul class="panel-content">
+                <li>
+                    <select name="">
+                        <option>省份</option>
+                    </select>
+                    <select name="">
+                        <option>城市</option>
+                    </select>
+                    <select name="">
+                        <option>商品类型</option>
+                    </select>
+                    <select name="">
+                        <option>平台类型</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="">
+                        <option>一级类目</option>
+                    </select>
+                    <select name="">
+                        <option>二级类目</option>
+                    </select>
+                    <select name="">
+                        <option>三级类目</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="">
+                        <option>一级类目</option>
+                    </select>
+                    <input type="text">
+                    <button type="submit" class="button button-primary">查询&gt;&gt;</button>
+                </li>
+            </ul>
+            <div class="form-actions">
+                <button type="submit" class="button button-primary">保存</button>
+                <button type="reset" class="button">重置</button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+        <div class="row">
+            <div class="panel" style="margin-left: 15px; margin-right: 15px">
+                <div class="panel-header">
+                    <h5>panel header</h5>
+                </div>
+                <div class="panel-body">
+                    <p>content</p>
+                </div>
+                <div class="panel-footer">
+                    <input class="button button-danger button-outline" type="button" value="默认">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 15px">
+            <div class="button-group button-group-small">
+                <input type="button" class="button button-danger" value="删除">
+                <input type="button" class="button button-link" value="提交">
+                <input type="button" class="button button-disabled" value="确定">
+            </div>
+            <button type="button" class="button button-info button-normal-circle">
+                <i class="fa fa-heart"></i>
+            </button>
+            <a class="button-white">
+                <i class="fa fa-check"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="../dist/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript">
+    $('#content-container').slimScroll({
+        width: "100%",
+        height: "100%"
+    });
+</script>
+<script type="text/javascript" src="./dist/js/seajs.js"></script>
+<script type="text/javascript" src="./dist/js/dzpjs.js"></script>
+<script type="text/javascript" src="./dist/js/common/loader.js"></script>
+</body>
+</html>

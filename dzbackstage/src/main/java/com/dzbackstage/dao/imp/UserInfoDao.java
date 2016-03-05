@@ -36,7 +36,7 @@ public class UserInfoDao extends BKDao{
 
     public UserInfo findByUserName(String uName){
         Session session = currentSession();
-        Query query = session.createSQLQuery("SELECT * FROM account WHERE userName = :name")
+        Query query = session.createSQLQuery("SELECT * FROM account WHERE account = :name")
                 .addEntity(UserInfo.class) /** 必需添加否则会出现类型转化异常(Ljava.lang.Object; cannot be cast to xxx)*/
                 .setString("name", uName);
         UserInfo userInfo = (UserInfo)query.uniqueResult();

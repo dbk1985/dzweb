@@ -1,0 +1,425 @@
+// 设置输入框样式
+// ------------------------
+.form-control-focus(@color: @formControlFocusBorder) {
+  @color-rgba: rgba(red(@color), green(@color), blue(@color), .6);
+  &:focus {
+    border-color: @color;
+    outline: 0;
+    .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px @{color-rgba}");
+  }
+}
+
+// Placeholder text
+.placeholder(@color: @inputPlaceholderColor) {
+  &::-moz-placeholder           { color: @color;   // Firefox
+    opacity: 1; } // See https://github.com/twbs/bootstrap/pull/11526
+  &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
+
+.form-control(@lineHeight:@inputControlRowHeight){
+  .inline-block();
+  height: @lineHeight;
+  line-height: @lineHeight;
+  padding: @paddingBaseVertical @paddingBaseHorizontal;
+  border: 1px solid @inputBorder;
+  border-radius: @radius;
+  vertical-align: middle;
+
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
+  .form-control-focus();
+  .placeholder();
+
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &[disabled],
+    // &[readonly],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    background-color: @inputDisabledBackground;
+    opacity: 1; // iOS fix for unreadable disabled content
+  }
+
+  // Reset height for `textarea`s
+  textarea& {
+    height: auto;
+  }
+}
+
+//因为ie6,所以需要在文本输入框（input标签）上面添加样式
+.input-text{
+  width:@inputNormalWidth;
+  // .input-control();
+  height: @inputControlRowHeight;
+  line-height:@inputControlRowHeight + @paddingBaseVertical * 2 + 2;
+}
+// label span 下输入框样式
+label,span{
+  &.input-text{
+    width:auto;
+    height:auto;
+    border:none;
+    padding:0;
+    display:inline;
+    vertical-align:middle;
+  }
+}
+
+//设置默认宽度
+select,textarea{
+  width:@inputNormalWidth;
+  border:1px solid @inputBorder;
+}
+
+input[type="text"],input[type="password"],input[type="email"],
+textarea,
+select{
+  .form-control();
+}
+
+select{
+  width: @inputNormalWidth + @paddingBaseHorizontal * 2 + 2;
+  margin-top: 0px;
+  height: @inputControlRowHeight;
+  margin-right: 5px;
+  &.select-normal{
+    width:@inputControlNormal;
+  }
+
+  &.select-small{
+    width:@inputControlSmall;
+  }
+
+  &.select-large{
+    width:@inputControlLarge;
+  }
+}
+
+.checkbox,.radio{
+  margin-left: 8px;
+  input{
+    vertical-align:middle;
+    margin-right: 5px;
+    margin-top:-4px;
+  }
+}
+
+.control-label {
+  color: #55555;
+  margin-right: @paddingMiniHorizontal;
+  s {
+    color: @errorText;
+    padding-left: @paddingMiniHorizontal;
+    padding-right: 0px;
+    text-decoration: none;
+  }
+}
+
+//辅助提示信息样式
+.auxiliary-text{
+  padding-top: 8px;
+  padding-left: 70px;
+  color: #999999;
+  display:block;
+  line-height: 10px;
+  .x-icon{
+    margin-right:5px;
+    vertical-align: text-bottom;
+  }
+  em{
+    font-style:normal;
+  }
+  .label{
+    font-weight: normal;
+    color: red;
+    vertical-align: baseline;
+    text-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.auxiliary-text em{
+  line-height: 10px;
+  background-color:transparent;
+  font-style:normal;
+  color:red;
+}
+
+// 错误提示信息
+.form-field-error{
+  margin-left:5px;
+  .form-field-error-text{
+    padding-left:5px;
+    color:@errorText;
+  }
+}
+
+.form-control-validation(@text-color: #555; @border-color: #ccc; @background-color: #f5f5f5) {
+  // Color the label and help text
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline,
+  &.radio label,
+  &.checkbox label,
+  &.radio-inline label,
+  &.checkbox-inline label  {
+    color: @text-color;
+  }
+  // Set the border and box shadow on specific inputs to match
+  .form-control {
+    border-color: @border-color !important;
+    .box-shadow(inset 0 1px 1px rgba(0,0,0,.075)); // Redeclare so transitions work
+    &:focus {
+      border-color: darken(@border-color, 10%);
+      @shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten(@border-color, 20%);
+      .box-shadow(@shadow);
+    }
+  }
+  // Set validation states also for addons
+  .input-group-addon {
+    color: @text-color;
+    border-color: @border-color !important;
+    background-color: @background-color;
+  }
+  // Optional feedback icon
+  .form-control-feedback {
+    color: @text-color;
+  }
+}
+
+.has-success {
+  .form-control-validation(#555; #1ab394; #1ab394);
+}
+.has-warning {
+  .form-control-validation(#555; #f8ac59; #f8ac59);
+}
+.has-error {
+  .form-control-validation(#555; #ed5565; #ed5565);
+}
+
+// 修改bootstrap 水平布局样式
+.form-inline{
+  @media all {
+    .form-group{
+      padding-top: @paddingMiniHorizontal;
+      padding-bottom: @paddingMiniHorizontal;
+      margin-bottom: @formGroupSpace;
+    }
+    // 修改bootstrap 表单输入框宽度
+    .form-group > .form-control {
+      &.input-s-sm {
+        width: 120px;
+      }
+      &.input-s {
+        width: 80%;
+      }
+      &.input-s-lg {
+        width: 250px;
+      }
+    }
+    .has-error,
+    .has-warning {
+      .auxiliary-text {
+        display: none;
+      }
+      .form-field-error {
+        display: inline-block;
+      }
+    }
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match.
+    .radio,
+    .checkbox {
+      display: inline-block;
+      margin-top: -5px;
+      margin-bottom: 0;
+      vertical-align: middle;
+
+      label {
+        padding-left: 20px;
+      }
+    }
+
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0;
+    }
+  }
+}
+
+//水平表单下的布局
+.form-horizontal {
+  .form-group{
+    .clearfix();
+    width: 100%;
+    display: block;
+    .form-control {
+      border-radius: 4px;
+      *zoom:1;
+      display: inline;
+      float: left;
+      margin-right: 100%;
+    }
+  }
+  .control-label{
+    width: auto;
+    float:left;
+    text-align: right;
+    line-height:@inputControlRowHeight + @paddingBaseVertical * 2 + 2;
+    .inline-block();
+    s{
+      color:red;
+      padding-right:5px;
+      text-decoration: none;
+    }
+    &.signal-line{    // 单行显示
+      float: none;
+      margin-bottom: @formGroupSpace;
+    }
+  }
+  .input-group{
+    padding-left: @paddingMiniHorizontal;
+    &:first-child{
+      padding-left: (@gridColumnWidth + @paddingMiniHorizontal);
+    }
+    &.input-s-sm {    //控制输入框宽度
+      width: 120px;
+    }
+    &.input-s {
+      width: 80px;
+    }
+    &.input-s-lg {
+      width: 250px;
+    }
+  }
+
+  // Consistent vertical alignment of radios and checkboxes
+  //
+  // Labels also get some reset styles, but that is scoped to a media query below.
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: @paddingMiniVertical; // Default padding plus a border
+  }
+  // Account for padding we're adding to ensure the alignment and of help text
+  // and other content below items
+  .radio,
+  .checkbox {
+    min-height: (@lineHeightComputed + (@paddingMiniVertical + 1));
+    input{
+      margin-top: 3px;
+    }
+  }
+
+  input[class*="span"],select[class*="span"] {
+    float: none;
+    margin: 0;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+
+    // Reset spacing and right align labels, but scope to media queries so that
+  // labels on narrow viewports stack the same as a default form example.
+  @media (min-width: @screen-sm) {
+    .control-label {
+      text-align: right;
+      margin-bottom: 0;
+      padding-top: (@paddingBaseVertical + 1); // Default padding plus a border
+    }
+  }
+
+  // Form group sizes
+  //
+  // Quick utility class for applying `.input-lg` and `.input-sm` styles to the
+  // inputs and labels within a `.form-group`.
+  //.form-group-lg {
+  //  @media (min-width: @screen-sm-min) {
+  //    .control-label {
+  //      padding-top: ((@padding-large-vertical * @line-height-large) + 1);
+  //      font-size: @font-size-large;
+  //    }
+  //  }
+  //}
+  //.form-group-sm {
+  //  @media (min-width: @screen-sm-min) {
+  //    .control-label {
+  //      padding-top: (@padding-small-vertical + 1);
+  //      font-size: @font-size-small;
+  //    }
+  //  }
+  //}
+}
+
+// 列表搜索条件输入框
+.form-panel{
+  background-color:#eeeeee;
+  margin-bottom:@baseLineHeight;
+  border:1px solid #dddddd;
+  color: @grayDark;
+  .border-radius(@radius);
+  input,select{
+    width:120px;
+    height: 30px;
+  }
+  input{
+    &.input-s-sm {    //控制输入框宽度
+      width: 100px;
+    }
+    &.input-s {
+      width: 140px;
+    }
+    &.input-s-lg {
+      width: 160px;
+    }
+  }
+  .panel-title{
+    background-color:#e8e9ef;
+    padding: 5px 15px;
+    height:@baseLineHeight*2;
+    line-height:@baseLineHeight*2;
+    .border-radius(@radius @radius 0 0);
+    label{
+      font-weight:bold;
+    }
+    border-bottom:1px solid #dddddd;
+  }
+  ul{
+    margin-top: @paddingBaseVertical;
+    margin-bottom: 0px;
+  }
+  .panel-content{
+    padding:@paddingBaseVertical @paddingBaseHorizontal;
+    li{
+      margin-bottom: @paddingLargeVertical;
+      list-style: none;
+      height:@baseLineHeight*2;
+      line-height:@baseLineHeight*2;
+    }
+    .button{
+      margin-left: @paddingMiniHorizontal;
+    }
+  }
+  .form-actions{
+    padding:@paddingBaseVertical @paddingBaseHorizontal;
+    margin-bottom: @paddingBaseVertical;
+    .button{
+      margin-right: @paddingSmallHorizontal;
+    }
+  }
+}
+
+

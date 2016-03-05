@@ -23,6 +23,7 @@
         <module>dzframe</module>
         <module>dzstage</module>
         <module>dzbackstage</module>
+        <module>dzmobile</module>
     </modules>
     <build>
         <pluginManagement>

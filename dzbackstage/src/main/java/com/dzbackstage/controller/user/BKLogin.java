@@ -34,20 +34,25 @@ public class BKLogin extends DZController {
          *
          * */
         String uName = getRequest().getParameter("userName");
-        /*String password = getRequest().getParameter("password");
+        String password = getRequest().getParameter("password");
+        if (uName == null || password == null){
+            return LOGIN;
+        }
+        userInfo = userInfoService.findByUseName(uName);
+        return SUCCESS;
+    }
+
+    public void register(){
+        String uName = getRequest().getParameter("userName");
+        String password = getRequest().getParameter("password");
         UserInfo userInfo = new UserInfo();
         userInfo.setUserName(uName);
         userInfo.setPassword(password);
         userInfo.setEmail("4564564@qq.com");
         if (uName == null){
-            return LOGIN;
+
         }
-        userInfoService.save(userInfo);*/
-        if (uName == null){
-            return LOGIN;
-        }
-        userInfo = userInfoService.findByUseName(uName);
-        return SUCCESS;
+        userInfoService.save(userInfo);
     }
 
     public UserInfo getUserInfo() {

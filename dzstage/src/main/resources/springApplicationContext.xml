@@ -4,14 +4,85 @@
        xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--
+    ======================================
+    ============数据库配置信位置============
+    ======================================
+    -->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>META-INF/hibernate.properties</value>
+        </property>
+    </bean>
 
-    <import resource="classpath:config/hbmSessionFactory.xml"/>
-    <import resource="classpath:config/springBeans.xml"/>
+    <!-- 通过apache DBCP来配置dataSource -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
 
-    <!-- sessionFactory 配置的第二种方式-->
-    <!--<bean id="transactionManager"-->
-          <!--class="org.springframework.orm.hibernate5.HibernateTransactionManager">-->
-        <!--<property name="sessionFactory" ref="sessionFactory" />-->
-    <!--</bean>-->
-    <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="annotatedClasses">
+            <list>
+                <value>com.dzeep.dzstage.model.Person</value>
+                <value>com.dzeep.dzstage.model.Board</value>
+                <value>com.dzeep.dzstage.model.Category</value>
+                <value>com.dzeep.dzstage.model.Reply</value>
+                <value>com.dzeep.dzstage.model.Thread</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+                <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+                <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+                <!--<prop key="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProviderr</prop>-->
+                <!--<prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</prop>-->
+                <!--<prop key="hibernate.cache.provider_configuration_file_resource_path">ehcache/ehcache-hibernate-local.xml</prop>-->
+                <!--<prop key="current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop>-->
+                <prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate5.SpringSessionContext</prop>
+                <!-- <prop key="hibernate.cache.use_second_level_cache">true</prop> -->
+                <!--<prop key="hibernate.cache.use_query_cache">true</prop>-->
+                <!--<prop key="jdbc.use_scrollable_resultset">false</prop>-->
+                 <!--<prop key="hibernate.transaction.auto_close_session">false</prop>-->
+            </props>
+        </property>
+    </bean>
+
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!--
+    ======================================
+    =============配置事务管理器=============
+    ======================================
+    -->
+    <tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager"/>
+    <!-- 事务管理器配置,单数据源事务 混用jdbcTemplage和hibernate事务
+     要使用org.springframework.orm.hibernate5.HibernateTransactionManager -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <!--
+    ======================================
+    ===========action bean配置============
+    ======================================
+    -->
+    <!--This bean has been referred fron struts.xml file; So type it correctly; -->
+    <!-- Make scope prototype; This is really important. -->
+    <bean name="sUser" class="com.dzeep.dzstage.controller.user.User" scope="prototype">
+        <property name="personServiceImp" ref="personService"/>
+    </bean>
+    <bean id="personService" class="com.dzeep.dzstage.service.PersonServiceImp">
+        <property name="dao" ref="personDao"/>
+    </bean>
+    <bean id="personDao" class="com.dzeep.dzstage.dao.PersionDao">
+        <property name="hibernateTemplate" ref="hibernateTemplate" />
+    </bean>
 </beans>

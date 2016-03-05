@@ -1,0 +1,155 @@
+@import "mixins/color";
+@import "modules/font";
+
+.gray-bg{
+  .gray-bg();
+  font-family:"open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:13px;
+  color:#676a6c;
+  overflow-x:hidden;
+  overflow-y: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight:100;
+}
+h1{
+  font-size:30px;
+}
+
+h2{
+  font-size:24px;
+}
+
+h3{
+  font-size:16px;
+}
+
+h4{
+  font-size:14px;
+}
+
+h5{
+  font-size:12px;
+}
+
+h6{
+  font-size:10px;
+}
+
+h3,h4,h5{
+  margin-top:5px;font-weight:600;
+}
+// 内联元素块显示
+.block{
+  display:block
+}
+
+.clear{
+  display:block;
+  overflow:hidden
+}
+
+a{
+  cursor:pointer
+  &:focus,
+  &:hover{
+    text-decoration:none
+  }
+  &:focus{
+    outline: 0;
+  }
+}
+
+.border-bottom{
+  border-bottom:1px solid #e7eaec!important
+}
+// bootstrap 箭头
+.arrow {
+  float: right;
+  margin-top: 2px
+}
+
+.fa.arrow:before {
+  content: "\f104"
+}
+
+.active > a > .fa.arrow:before {
+  content: "\f107"
+}
+
+.link-block {
+  font-size: 12px;
+  padding: 10px
+}
+.link-block a {
+  font-size: 10px;
+  color: inherit
+}
+.nav.navbar-top-links .link-block a {
+  font-size: 12px
+}
+
+.media-body {
+  display: block;
+  width: auto;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+//文字颜色
+.text-navy {
+  color: #1ab394
+}
+
+.text-primary {
+  color: inherit
+}
+
+.text-success {
+  color: #1c84c6
+}
+
+.text-info {
+  color: #23c6c8
+}
+
+.text-warning {
+  color: #f8ac59
+}
+
+.text-danger {
+  color: #ed5565
+}
+
+.text-muted {
+  color: #888
+}
+
+.body-container{
+  width: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .pace-progress {
+    background: #1ab394;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    width: 100%;
+    height: 2px
+  }
+  .pace-inactive {
+    display: none
+  }
+}

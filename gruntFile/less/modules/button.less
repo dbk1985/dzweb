@@ -1,0 +1,31 @@
+.btn {
+  border-radius: 3px
+}
+
+.btn-primary {
+  background-color: #1ab394;
+  border-color: #1ab394;
+  color: #FFF;
+  &.active,
+  &:hover,
+  &:focus{
+    background-color: #18a689;
+    border-color: #18a689;
+    color: #FFF
+  }
+  &.active{
+    background-image: none
+  }
+  &.active[disable],
+  .disabled,
+  .disabled.active,
+  .disabled:focus,
+  .disabled:hover,
+  [disabled],
+  [disabled]:active,
+  [disabled]:focus,
+  [disabled]:hover{
+    background-color: #1dc5a3;
+    border-color: #1dc5a3
+  }
+}

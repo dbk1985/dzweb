@@ -1,0 +1,115 @@
+/** 多有菜单全局设置 */
+@import "../variables";
+//导航菜单容器
+
+.nav{
+  >li>a{
+    color:#a7b1c2;font-weight:600;padding:14px 20px 14px 25px;
+  }
+  li>a{
+    display:block;
+  }
+  &.navbar-right>li>a{
+    color:#999c9e;
+  }
+  >li.active>a{
+    color:#fff;
+  }
+  >li>a i{
+    margin-right:6px;
+  }
+  .open>a,
+  .open>a:focus,
+  .open>a:hover{
+    background:#fff
+  }
+  >li.active{   //左侧菜单展开设置
+    border-left:4px solid #19aa8d;background:#293846
+  }
+}
+
+.navbar-default{
+  .nav-container{
+    background-color:#2f4050;
+  }
+  background-color:transparent;border-color:#2f4050;position:relative;
+  background-color: #2f4050;
+  .special_link a{
+    background:#1ab394;color:#fff;
+    &:hover{
+      background:#17987e!important;color:#fff;
+    }
+    span.label{
+      background:#fff;color:#1ab394;
+    }
+  }
+  .landing_link a{
+    background:#1cc09f;color:#fff;
+    &:hover{
+      background:#1ab394!important;color:#fff;
+    }
+    span.label{
+      background:#fff;color:#1cc09f
+    }
+  }
+  .nav>li>a{
+    &:focus,
+    &:hover{
+      background-color:#293846;
+      color:#fff;
+    }
+  }
+}
+
+// 左侧菜单中头像设置
+.nav-header{
+  padding:3px 30px;
+  .img-circle{
+    width: 60px;
+  }
+  a{
+    color:#DFE4ED;
+  }
+  .text-muted{
+    color:#8095a8;
+  }
+}
+
+// 二级菜单设置
+.nav.nav-second-level{
+  >li.active{
+    border:none
+  }
+  .collapse[style]{
+    height:auto!important
+  }
+}
+.nav-second-level li{
+  border-bottom:none!important;
+  a{
+    padding:7px 15px 7px 10px;padding-left:52px
+  }
+  &:last-child{
+    margin-bottom:10px
+  }
+}
+
+// 三级菜单
+.nav-third-level li{
+  border-bottom:none!important;
+  a{
+    padding-left:62px
+  }
+}
+// normal right menu
+body.fixed-sidebar .navbar-static-side{
+  position:fixed;width:@left-nav-slide-width;z-index:2001;height:100%
+}
+
+// small right menu
+body.fixed-sidebar.mini-navbar{
+  .navbar-static-side{
+    width:@left-nav-slide-width-mini;
+  }
+}
+

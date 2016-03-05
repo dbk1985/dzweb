@@ -1,0 +1,249 @@
+// color
+// ------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark: #333333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+@bodyBackground:        @white;
+
+@brandPrimary:         #5a98de;
+@brandSuccess:         #5cb85c;
+@brandInfo:            #5bc0de;
+@brandWarning:         #f0ad4e;
+@brandDanger:          #d9534f;
+@brandInverse:         @grayDarker;
+
+@successText:             #fff;
+@successBackground:       #5eb95e;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                #31708f;
+@infoBackground:          #d9edf7;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+@warningText:             #fff;
+@warningBackground:       #f37b1d;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #dd514c; //#b94a48;
+@errorBackground:         #f2dede;
+@errorBorder:             darken(spin(@errorBackground, -10), 5%);
+// @errorOuter:              #cc4333;
+
+@linkColor:               #0e90d2;
+@linkColorHover:        darken(@linkColor, 15%);
+
+//icons 大部分icons的颜色使用按钮的颜色
+@iconInfoBackground:                #0096e8;
+@iconInfoBackgroundHighlight:       #0071e7;
+
+@iconBackground:                    #fff;//没特殊颜色的icon
+@iconColor:                         #9ca0b1;
+@iconBorderColor:                   #c3c3d6;
+@iconBackgroundHighlight:           #e6e6e6;
+
+@iconDisableBackGroundHighlight:    #ececec;
+@iconDisableColor:                  #d5d5d5;
+@iconDisableBorderColor:            #dfdfdf;
+
+@iconHoverBackGroundHighlight:      #DEDEDE;
+@iconHoverColor:                    #73787d;
+@iconHoverBorderColor:              #a6a6c1;
+
+
+
+@radius:                  4px;
+@radiusLarge:             6px;
+@radiusSmall:             3px;
+
+@paddingBaseVertical:     5px;
+@paddingBaseHorizontal:   12px;
+
+@paddingLargeVertical:    10px;
+@paddingLargeHorizontal:  16px;
+
+@paddingSmallVertical:    2px;
+@paddingSmallHorizontal:  8px;
+
+@paddingMiniVertical:     1px;
+@paddingMiniHorizontal:   5px;
+
+@lineHeightLarge:         1.33;
+@lineHeightSmall:         1.5;
+
+// Font
+// -------------------------
+@baseFontSize:          12px;
+@baseFontFamily:        "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+@altFontFamily:         @baseFontFamily;
+@numberFontFamily:      "Tahoma","SimSun";
+
+//** Unit-less `line-height` for use in components like buttons.
+@baseLineHeight:        14px; // 20/14
+@normalLineHeight:      20px;
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@computedLineHeight:    14px; //floor((@baseFontSize * @baseLineHeight)); // ~20px
+
+@headingsFontFamily:    "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+@headingsFontWeight:    500;    // instead of browser default, 500
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+//字体大小的字义
+@fontSizeBase:          @baseFontSize;
+@fontSizeLarge:         18px;  //ceil((@baseFontSize * 1.25)); // ~18px
+@fontSizeSmall:         12px;  //ceil((@baseFontSize * 0.85)); // ~12px
+
+@font-size-h1:          24px;  //floor((@baseFontSize * 2.6)); // ~36px
+@font-size-h2:          18px;  //floor((@baseFontSize * 2.15)); // ~30px
+@font-size-h3:          16px;  //ceil((@baseFontSize * 1.7)); // ~24px
+@font-size-h4:          14px;  //ceil((@baseFontSize * 1.25)); // ~18px
+@font-size-h5:          12px;  //@baseFontSize;
+@font-size-h6:          12px;  //ceil((@baseFontSize * 0.85)); // ~12px
+//** Unit-less `line-height` for use in components like buttons.
+@lineHeightBase:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@lineHeightComputed:    floor((@fontSizeBase * @lineHeightBase)); // ~20px
+
+// Panel
+// --------------------------
+@panel-bg:                    #fbfff9;
+@panel-border-radius:         @radius;
+
+@panel-body-padding:          15px;
+
+@panel-header-padding:        10px 15px;
+
+@panel-footer-padding:        @panel-header-padding;
+@panel-footer-bg: #77c5f5;
+
+// Border color for elements within panels
+@panel-inner-border:          #ddd;
+@panel-footer-bg:             #f5f5f5;
+
+@panel-default-text:          @grayDark;
+@panel-default-border:        #ddd;
+@panel-default-heading-bg:    #f5f5f5;
+
+@panel-primary-text:          #fff;
+@panel-primary-border:        @brandPrimary;
+@panel-primary-heading-bg:    @brandPrimary;
+
+@buttonSecondaryColor:        #fff;
+@buttonSecondaryBg:           #3bb4f2;
+@buttonSecondaryBorder:       @buttonSecondaryBg;
+
+@panel-success-text:          @successText;
+@panel-success-border:        @successBorder;
+@panel-success-heading-bg:    @successBackground;
+
+@panel-info-text:             @infoText;
+@panel-info-border:           @infoBorder;
+@panel-info-heading-bg:       @infoBackground;
+
+@panel-warning-text:          @warningText;
+@panel-warning-border:        @warningBorder;
+@panel-warning-heading-bg:    @warningBackground;
+
+@panel-danger-text:           @errorText;
+@panel-danger-border:         @errorBorder;
+@panel-danger-heading-bg:     @errorBackground;
+
+// Button
+// ---------------------------
+@buttonFontWeight:                normal;
+
+@buttonDefaultColor:              #333;
+@buttonDefaultBg:                 #c7c7c7;
+@buttonDefaultBorder:             @buttonDefaultBg;
+
+@buttonPrimaryColor:              #fff;
+@buttonPrimaryBg:                 @brandPrimary;
+@buttonPrimaryBorder:             darken(@buttonPrimaryBg, 5%);
+
+@buttonSuccessColor:              #fff;
+@buttonSuccessBg:                 @brandSuccess;
+@buttonSuccessBorder:             darken(@buttonSuccessBg, 5%);
+
+@buttonInfoColor:                 #fff;
+@buttonInfoBg:                    @brandInfo;
+@buttonInfoBorder:                darken(@buttonInfoBg, 5%);
+
+@buttonWarningColor:              #fff;
+@buttonWarningBg:                 @brandWarning;
+@buttonWarningBorder:             darken(@buttonWarningBg, 5%);
+
+@buttonDangerColor:               #fff;
+@buttonDangerBg:                  @brandDanger;
+@buttonDangerBorder:              darken(@buttonDangerBg, 5%);
+
+@buttonInverseColor:               #fff;
+@buttonInverseBg:                  @brandInverse;
+@buttonInverseBorder:              darken(@buttonInverseBg, 5%);
+
+@buttonLinkDisabledColor:        @grayLight;
+
+
+@btnBackground:                     #fff;//#f8f8f8;
+@btnBackgroundHighlight:            #e4e4e4;
+
+// Forms
+// -------------------------
+@inputBackground:               @white;
+@inputBorder:                   #cccccc;
+@inputDisabledBackground:       @grayLighter;
+@formControlFocusBorder:            #66afe9;
+@inputPlaceholderColor:         @grayLight;
+@inputControlRowHeight:         34px;     //输入框高度
+@inputNormalWidth:              140px;
+@inputSmallWidth:               80px;
+@inputLargeWidth:               300px;
+@inputControlAppendHeight:      4px;
+@formGroupSpace:                8px;
+@formHControllwidth:            30px;
+
+@inputControlNormal:            140px;
+@inputControlSmall:             80px;
+@inputControlLarge:             300px;
+
+// GRID
+// --------------------------------------------------
+
+// Default 950px grid
+// -------------------------
+@gridColumns:             24;
+@gridColumnWidth:         30px;//default 60
+@gridGutterWidth:         10px;//default 20
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+//== Media queries breakpoints
+// --------------------------------------------------
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+// Extra small screen / phone
+@screen-xs:                  480px;
+// Small screen / tablet
+@screen-sm:                  768px;
+// Medium screen / desktop
+@screen-md-min:              992px;
+// Large screen / wide desktop
+@screen-lg-desktop:          1200px;
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-desktop - 1);
+
+// Tables
+// -------------------------
+@tableBackground:                   transparent; // overall background-color
+@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackgroundHover:              #f5f5f5; // for hover
+@tableBorder:                       #ddd; // table and cell border
+@tableActive:                       @tableBackgroundHover;
+
+@tableBorderedHeaderBackground:             #f8f8f8;
+@tableBorderedHeaderBackgroundHighlight:    @grayLighter;
+
+@tableHeaderBackground:             @white;
+@tableHeaderBackgroundHighlight:    #f4f4f4;

@@ -100,6 +100,12 @@
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
             <version>2.3.24</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javassist</groupId>
+                    <artifactId>javassist</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.struts</groupId>
@@ -219,6 +225,11 @@
             <!--<artifactId>h2</artifactId>-->
             <!--<version>1.4.189</version>-->
         <!--</dependency>-->
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
         <!-- Mysql数据库驱动 -->
         <dependency>
             <groupId>mysql</groupId>
@@ -286,16 +297,10 @@
             <artifactId>hibernate-infinispan</artifactId>
             <version>5.0.1.Final</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate.javax.persistence</groupId>-->
-            <!--<artifactId>hibernate-jpa-2.1-api</artifactId>-->
-            <!--<version>1.0.0.Final</version>-->
+        <!--<dependency> &lt;!&ndash;hibernate core中包含了persistence-jpa 从而导致注解冲突&ndash;&gt;-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>ejb3-persistence</artifactId>-->
+            <!--<version>1.0.2.GA</version>-->
         <!--</dependency>-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>ejb3-persistence</artifactId>
-            <version>1.0.2.GA</version>
-        </dependency>
-
     </dependencies>
 </project>

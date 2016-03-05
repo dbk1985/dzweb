@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 模板引擎配置文件 -->
 <toolbox>
     <xhtml>true</xhtml>
     <data type="number">

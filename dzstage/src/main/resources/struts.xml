@@ -3,18 +3,51 @@
 <!DOCTYPE struts PUBLIC
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
-
 <struts>
-        <constant name="struts.devMode" value="true" />
-        <package name="dzstage" extends="struts-default">
-                <action name="index">
-                        <result>/index.jsp</result>
-                </action>
-                <action name="reg" class="com.dzeep.dzstage.controller.user.Register">
-                        <result name="success">/welcome.jsp</result>
-                </action>
-                <action name="login" class="com.dzeep.dzstage.controller.user.Login">
-                        <result name="success">/welcome.jsp</result>
-                </action>
-        </package>
+    <constant name="struts.devMode" value="true"/>
+    <!--<constant name="struts.configuration.xml.reload" value="true"/>-->
+    <!--<constant name="struts.serve.static.browerCache" value="false"/>-->
+    <constant name="struts.action.extension" value="do"/>
+    <!-- 该属性设置为true时才可以使用action!method.do方式 -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <package name="dzstage" extends="struts-default">
+        <result-types>
+            <result-type name="ajaxResult" class="com.dzeep.dzstage.result.AjaxResult"/>
+        </result-types>
+        <!-- action中name指定url中得action动作 method指定该action动作对应的类（class）的方法-->
+        <!--
+        action中的子元素result指定action动作返回标记作出的行为，如输出数据到客户端、页面跳转、页面重定向等
+        具体由result中的type与name决定，name为action方法返回的标记,name除Struts提供的SUCCESSNONE、ERROR、INPUT、
+        LOGIN,可以自己定义一个名字，只要保持与对于的action中的方法中返回的一致即可；type为struts已经指定了很多的类型如：
+        dispatcher、redirect...,如果Struts提供的Result类型不够用，可以定义一个自己的Result类（自定义Result）
+        -->
+        <action name="index" class="com.dzeep.dzstage.controller.Index">
+            <result name="login">/staticPage/login.jsp</result>
+            <!-- toIndex为自定义的结果名称 对于的action（index）动作中的execute方法也要返回“toIndex” -->
+            <result name="toIndex">/index.jsp</result>
+        </action>
+        <!-- class引用了spring中定义的Controller -->
+        <action name="user" class="sUser">
+            <result name="success">/staticPage/user.jsp</result>
+        </action>
+        <action name="reg" class="sUser" method="regist">
+            <result name="success">/staticPage/regist.jsp</result>
+        </action>
+        <action name="login" class="sUser" method="login">
+            <result name="success" type="redirectAction">
+                <param name="namespace">/dzstage</param>
+                <param name="actionName">index</param>
+            </result>
+            <result name="info" type="redirectAction">
+                <!-- 需要配置<constant name="struts.enable.DynamicMethodInvocation" value="true"/> -->
+                <param name="namespace">/dzstage</param>
+                <param name="actionName">user</param>
+                <param name="method">info</param>
+            </result>
+            <result name="login">/staticPage/login.jsp</result>
+        </action>
+        <action name="validate" class="sUser" method="ajaxValidate">
+            <result name="success" type="ajaxResult"/>
+        </action>
+    </package>
 </struts>

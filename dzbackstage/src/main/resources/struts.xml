@@ -28,13 +28,15 @@
 
                 <!-- class="sLogin" sLogin为spring的bean对应的name属性值 type="velocity" 添加来支持velovity模板 -->
                 <action name="login" class="sLogin" method="execute">
-                    <result name="success" type="velocity">/index.vm</result>
+                    <!--<result name="success" type="velocity">/index.vm</result>-->
+                    <result name="success">/public/index.html</result>
                 </action>
 
                 <action name="index" class="sIndex" method="execute">
                     <!-- 使用拦截器 -->
                     <interceptor-ref name="authentication"/>
-                    <result name="success" type="velocity">/index.vm</result>
+                    <result name="success">/public/index.html</result>
+                    <!--<result name="success" type="velocity">/index.vm</result>-->
                 </action>
 
         </package>

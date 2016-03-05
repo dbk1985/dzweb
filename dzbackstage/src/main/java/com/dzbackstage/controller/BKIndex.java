@@ -4,6 +4,7 @@ import com.dzeep.dzframe.controller.DZController;
 
 /**
  * Created by fighting on 15/9/16.
+ *
  */
 public class BKIndex extends DZController{
     private  String title;
@@ -53,7 +54,7 @@ public class BKIndex extends DZController{
 //            StandardServiceRegistryBuilder.destroy( registry );
 //        }
         
-        return LOGIN;
+        return /*LOGIN*/SUCCESS;
     }
 
     public String getTitle() {

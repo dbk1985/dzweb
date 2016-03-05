@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>列表/详情</title>
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/dist/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dist/vendor/animate/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="dist/css/dzp.css">
+    <style type="text/css">
+        .body-container {
+            width: auto;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body class="body-container">
+<form class="form-panel" action="post">
+    <div class="panel-title">
+            <span>
+              <label>报名日期：</label>
+                <input type="text" class="calendar input-s-lg">
+                <label>至</label>
+                <input type="text" class="calendar input-s-lg">
+            </span>
+            <span>
+              <label>上阶段审核日期：</label>
+                <input type="text" class="calendar input-s-lg">
+                <label>至</label>
+                <input type="text" class="calendar input-s-lg">
+            </span>
+    </div>
+    <ul class="panel-content">
+        <li>
+            <select name="">
+                <option>省份</option>
+            </select>
+            <select name="">
+                <option>城市</option>
+            </select>
+            <select name="">
+                <option>商品类型</option>
+            </select>
+            <select name="">
+                <option>平台类型</option>
+            </select>
+            <select name="">
+                <option>是否在商品池</option>
+            </select>
+            <select name="">
+                <option>是否看样子</option>
+            </select>
+            <select name="">
+                <option>是否已审核</option>
+            </select>
+        </li>
+        <li>
+            <select name="">
+                <option>一级类目</option>
+            </select>
+            <select name="">
+                <option>二级类目</option>
+            </select>
+            <select name="">
+                <option>三级类目</option>
+            </select>
+            <select name="">
+                <option>四级类目</option>
+            </select>
+            <select name="">
+                <option>五级类目</option>
+            </select>
+            <select name="">
+                <option>商品数字id</option>
+            </select>
+        </li>
+        <li>
+            <select name="">
+                <option>一级类目</option>
+            </select>
+            <input type="text">
+            <button type="submit" class="button button-primary">查询&gt;&gt;</button>
+        </li>
+    </ul>
+</form>
+<table cellspacing="0" class="table table-bordered">
+    <thead>
+    <tr><th colspan="5">
+        <ul class="toolbar">
+            <li class="toolbar-item">
+                <label class="checkbox">
+                <input type="checkbox">
+                    <a href="#">全选</a>
+                </label>
+            </li>
+            <li><button class="button button-danger"><i class="fa fa-trash"></i>批量删除</button></li>
+            <li><button class="button button-success">审核通过</button></li>
+            <li><button class="button button-inverse">审核不通过</button></li>
+        </ul>
+    </th></tr>
+    <tr>
+        <th width="15"></th>
+        <th>#</th>
+        <th>姓名</th>
+        <th>别名</th>
+        <th>用户名</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>张某某</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1.1</td>
+        <td>张三</td>
+        <td>张某某</td>
+        <td>@TwBootstrap</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>2</td>
+        <td>李四</td>
+        <td>李证明</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>3</td>
+        <td colspan="2">王五 王明</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
+<div class="row">
+    <div class="col-md-6">
+        <ul class="toolbar">
+            <li><label class="checkbox"><input type="checkbox"><a href="#">全选</a></label></li>
+            <li><button class="button button-danger"><i class="icon-white icon-trash"></i>批量删除</button></li>
+            <li><button class="button button-success">审核通过</button></li>
+            <li><button class="button button-inverse">审核不通过</button></li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <div class="page">
+            <ul>
+                <li class="disabled"><a href="#"><< 上一页</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">下一页 >></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div ng-app="tableApp">
+    <div ng-controller='tableController'>
+        {{name}}
+    </div>
+</div>
+<script type="text/javascript" src="./dist/js/vendor/angular.js"></script>
+<script type="text/javascript" src="./dist/js/table.js"></script>
+</body>
+</html>

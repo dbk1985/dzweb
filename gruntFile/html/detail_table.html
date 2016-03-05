@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表详情</title>
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/dist/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dist/vendor/animate/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="./dist/css/dzp.css">
+
+</head>
+<body>
+<div class=".body-container">
+    <div class="row">
+        <div class="span24">
+            <!-- 包含grid的详情页 ================================================== -->
+            <h2>包含grid的详情页</h2>
+            <hr>
+            <form name="" action="" method="post" id="detailForm">
+
+                <h3>入库单详情</h3>
+                <div class="row detail-row">
+                    <div class="col-md-4">
+                        <label>采购单编号：</label><span class="detail-text">12584863145</span>
+                    </div>
+                    <div class="col-md-4">
+                        <label>供应商编号：</label><span class="detail-text">545645454</span>
+                    </div>
+                    <div class="col-md-4">
+                        <label>供应商名称：</label><span class="detail-text">黑牡丹牛仔裤</span>
+                    </div>
+                </div>
+                <div class="row detail-row">
+                    <div class="col-md-4">
+                        <label>供应商所在地：</label><span class="detail-text">浙江省金华市</span>
+                    </div>
+                    <div class="col-md-4">
+                        <label>公司名称：</label><span class="detail-text">杭州中法国际</span>
+                    </div>
+                    <div class="col-md-4">
+                        <label>联系方式：</label><span class="detail-text">1454541521</span>
+                    </div>
+                </div>
+                <div class="row detail-row">
+                    <div class="col-md-4">
+                        <label>公司地址</label><span class="detail-text">浙江省金华市*****************</span>
+                    </div>
+                    <div class="col-md-48">
+                        <label>商品spu：</label><span class="detail-text">D23565556256</span>
+                    </div>
+                    <div class="col-md-48">
+                        <label>商品名称：</label><span class="detail-text">墨绿色直筒牛仔裤</span>
+                    </div>
+                </div>
+                <div class="row detail-row">
+                    <div class="col-md-6">
+                        <label>行业类目：</label><span class="detail-text">女装</span>
+                    </div>
+                    <div class="col-md-6">
+                        <label>商品发货地址：</label><span class="detail-text">浙江省金华市*****************</span>
+                    </div>
+                </div>
+                <h3>货品信息</h3>
+                <div class="detail-row">
+                    <div class="search-grid-container">
+                        <div id="grid">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row detail-row">
+                    <div class="span8">
+                        <label>货品总量：</label><span class="detail-text">5000</span>
+                    </div>
+                </div>
+                <!--- button区域 -->
+                <div class="detail-row">
+                    <div class="detail-actions">
+                        <a class="button button-primary" href="javascript:void(0)" id="close">关闭</a>
+                        <a class="button button-primary" href="javascript:void(0)" id="auditPass">审核通过</a>
+                        <a class="button button-primary" href="javascript:void(0)" id="auditNopass">审核不通过</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

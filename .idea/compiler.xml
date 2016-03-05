@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <excludeFromCompile>
-      <file url="file://$PROJECT_DIR$/dzframe/src/main/java/com/dzeep/dzframe/filter/DZFilter.java" />
-    </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -20,19 +17,19 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for dzstage" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="dzstage" />
-      </profile>
       <profile default="false" name="Annotation profile for dzframe" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="dzframe" />
+      </profile>
+      <profile default="false" name="Annotation profile for dzstage" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="dzstage" />
       </profile>
       <profile default="false" name="Annotation profile for dzbackstage" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -50,11 +47,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="deweb" target="1.5" />
       <module name="dzbackstage" target="1.8" />
       <module name="dzframe" target="1.8" />
       <module name="dzmobile" target="1.8" />
       <module name="dzstage" target="1.8" />
-      <module name="dzweb" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,315 @@
+// Button
+// ----------------------------------------
+
+// mixins
+// ----------------------------------------
+.button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @color;
+    background-color: darken(@background, 10%);
+    border-color: darken(@border, 12%);
+  }
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background;
+      border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}
+
+// Button sizes
+.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  padding: @padding-vertical @padding-horizontal;
+  font-size: @font-size;
+  //line-height: @line-height;
+  border-radius: @border-radius;
+}
+
+// Button base style
+// ----------------------------------------
+
+.button{
+  .inline-block();
+  text-align:center;
+  white-space:nowrap;
+  vertical-align: middle;
+  *zoom:1;
+  margin-bottom: 0; // For input.button
+  font-weight: normal;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  line-height: @normalLineHeight;
+
+  -webkit-transition:background-color .1s linear;
+  -moz-transition:background-color .1s linear;
+  -o-transition:background-color .1s linear;
+  transition:background-color .1s linear;
+  .button-size(@paddingBaseVertical; @paddingBaseHorizontal; @baseFontSize + 2; @baseLineHeight; @radius);
+  .user-select(none);
+  .button-default;
+  &,
+  &:active,
+  &.active {
+    &:focus {
+      .tab-focus();
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: @buttonDefaultColor;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    .box-shadow(inset 0 1px 8px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    pointer-events: none; // Future-proof disabling of clicks
+    .opacity(.65);
+    .box-shadow(none);
+  }
+  &.button-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+  }
+  .fa{
+    font-size: 17px;
+    margin-right: 5px;
+  }
+}
+
+/*默认——灰色 通常用于取消*/
+.button-default {
+  .button-variant(@buttonDefaultColor; @buttonDefaultBg; @buttonDefaultBorder);
+}
+/*主要——主色 通常用于确定、提交、购买、支付等*/
+.button-primary {
+  .button-variant(@buttonPrimaryColor; @buttonPrimaryBg; @buttonPrimaryBorder);
+}
+/*次要按钮*/
+.button-secondary{
+  .button-variant(@buttonSecondaryColor;@buttonSecondaryBg;@buttonSecondaryBorder);
+}
+
+/*成功*/
+.button-success {
+  .button-variant(@buttonSuccessColor; @buttonSuccessBg; @buttonSuccessBorder);
+}
+// Info appears as blue-green
+.button-info {
+  .button-variant(@buttonInfoColor; @buttonInfoBg; @buttonInfoBorder);
+}
+/*警告*/
+.button-warning {
+  .button-variant(@buttonWarningColor; @buttonWarningBg; @buttonWarningBorder);
+}
+/*危险*/
+.button-danger {
+  .button-variant(@buttonDangerColor; @buttonDangerBg; @buttonDangerBorder);
+}
+/*链接*/
+.button-link{
+  color:@linkColor;
+  font-weight: normal;
+  cursor: pointer;
+  border-radius: 0;
+  border-color:transparent;
+  background-color:transparent;
+  &,
+  &:active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    .box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &.active{
+    color: @linkColorHover;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: @buttonLinkDisabledColor;
+      text-decoration: none;
+    }
+  }
+}
+
+.button-white {
+  color: inherit;
+  background: white;
+  border: 1px solid #e7eaec;
+  .button-size(@paddingBaseVertical; @paddingBaseHorizontal; @baseFontSize + 2; @baseLineHeight; @radius);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle&{
+    color: inherit;
+    border: 1px solid #d2d2d2;
+  }
+
+  &:active,
+  &.active {
+    background: inherit;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset;
+  }
+
+  &:active,
+  &.active,
+  .open .dropdown-toggle&{
+    background-image: none;
+  }
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active,
+  &.disabled.active,
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus,
+  &[disabled]:active,
+  &.active[disabled],
+  fieldset[disabled] &,
+  fieldset[disabled] &:hover,
+  fieldset[disabled] &:focus,
+  fieldset[disabled] &:active,
+  fieldset[disabled] &.active {
+    color: #cacaca;
+  }
+}
+
+/*禁用状态*/
+.button-disabled{
+  cursor:not-allowed;
+  background-image:none;
+  opacity:.65;filter:alpha(opacity=65);
+  box-shadow:none;
+  pointer-events:none;
+}
+
+//这是一种替代的按钮
+.button-inverse {
+  .button-variant(@buttonInverseColor; @buttonInverseBg; @buttonInverseBorder);
+}
+
+a.button:hover,a.button:focus,a.button:active,a.button.active,a.button.disabled,a.button[disabled]{
+  text-decoration:none;
+}
+
+.button:first-child{
+  *margin-left:0;
+}
+
+// Button Sizes
+// --------------------------------------------------
+.button-large {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@paddingLargeVertical; @paddingLargeHorizontal; @fontSizeLarge; @lineHeightLarge; @radiusLarge);
+}
+.button-small {
+  // line-height: ensure proper height of button next to small input
+  .button-size(@paddingSmallVertical; @paddingSmallHorizontal; @fontSizeSmall; @lineHeightSmall; @radiusSmall);
+}
+.button-mini {
+  .button-size(@paddingMiniVertical; @paddingMiniHorizontal; @fontSizeSmall; @lineHeightSmall; @radiusSmall);
+}
+
+
+// Block button
+// --------------------------------------------------
+.button-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Vertically space out multiple block buttons
+.button-block + .button-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.button-block {
+    width: 100%;
+  }
+}
+
+.button-circle(@buttonSize; @font-size; @line-height) {
+  width: @buttonSize;
+  height: @buttonSize;
+  border-radius: (@buttonSize * 0.5);
+  text-align: center;
+  font-size: @font-size;
+  line-height: @line-height;
+}
+/** 圆形按钮 */
+.button-small-circle{
+  .button-circle(30px,12px,1.428571429);
+  padding: 6px 0;
+}
+
+.button-normal-circle{
+  .button-circle(50px,18px,1.33);
+  padding: 10px 16px;
+}
+
+.button-large-circle{
+  .button-circle(70px,24px,1.33);
+  padding: 10px 16px;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+
