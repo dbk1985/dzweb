@@ -5,116 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51265c2a-b6f7-4993-8789-e1dda486bcc2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/config/.csslintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/config/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/result/AjaxResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/model/BaseBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/model/Board.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/model/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/controller/DZAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/dao/DaoImp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/dao/IDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/service/IPersonService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/service/IService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/controller/Index.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzframe/src/main/java/com/dzeep/dzframe/utils/MD5Utils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/dao/PersionDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/model/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/service/PersonServiceImp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/model/Reply.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/service/ServiceImp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/model/Thread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/controller/user/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/alan.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/js/common/array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/js/common/browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/button.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/mixins/color.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/content.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/js/common/date.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/html/detail_table.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/dzp.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/mixins/dzp_border-radius.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/mixins/dzp_box-shadow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/dzp_button-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/dzp_button.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/mixins/dzp_clearfix.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/mixins/dzp_common.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/dzp_form.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/dzp_global.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/dzp_icon.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/dzp_mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/dzp_page.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/dzp_panel.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/dzp_toolbar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/mixins/dzp_transition.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/dzp_variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/font.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/html/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/webapp/META-INF/hibernate.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/js/common/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/js/common/keycode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/js/common/loader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/html/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/webapp/staticPage/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/modules/navigation.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/normalize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/webapp/staticPage/regist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/style.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/html/table.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/js/table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dzstage/src/main/webapp/staticPage/user.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/js/common/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gruntFile/less/variables.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/excludeFromValidation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/lessc/lessc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_189.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_11_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_ejb3_persistence_1_0_2_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dzbackstage/lessFiles/main.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/public/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/controller/user/Login.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/controller/user/Register.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dzstage/src/main/java/com/dzeep/dzstage/model/UserInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dzstage/src/main/resources/config/hbmSessionFactory.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dzstage/src/main/resources/config/springBeans.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dzstage/src/main/resources/hibernate.cfg.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/BKIndex.java" afterPath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/BKIndex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/user/BKLogin.java" afterPath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/controller/user/BKLogin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java" afterPath="$PROJECT_DIR$/dzbackstage/src/main/java/com/dzbackstage/dao/imp/UserInfoDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/dzbackstage.iml" afterPath="$PROJECT_DIR$/dzbackstage/dzbackstage.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dzbackstage_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dzbackstage_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzframe/dzframe.iml" afterPath="$PROJECT_DIR$/dzframe/dzframe.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzmobile/dzmobile.iml" afterPath="$PROJECT_DIR$/dzmobile/dzmobile.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dzmobile_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dzmobile_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzstage/dzstage.iml" afterPath="$PROJECT_DIR$/dzstage/dzstage.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dzstage_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dzstage_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzstage/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/dzstage/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/login.vm" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/login.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzframe/pom.xml" afterPath="$PROJECT_DIR$/dzframe/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzstage/src/main/resources/springApplicationContext.xml" afterPath="$PROJECT_DIR$/dzstage/src/main/resources/springApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/dzbackstage/src/main/resources/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzstage/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/dzstage/src/main/resources/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/velocity-toolbox.xml" afterPath="$PROJECT_DIR$/dzbackstage/src/main/webapp/WEB-INF/velocity-toolbox.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dzstage/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/dzstage/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dzweb.iws" />
@@ -290,6 +180,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -318,80 +210,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dzbackstage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzbackstage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzbackstage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dzbackstage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="gruntFile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -939,12 +763,13 @@
       <workItem from="1456637168670" duration="2583000" />
       <workItem from="1456651928824" duration="919000" />
       <workItem from="1456749567995" duration="202000" />
-      <workItem from="1457157719274" duration="348000" />
+      <workItem from="1457157719274" duration="443000" />
+      <workItem from="1457221695743" duration="332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314989000" />
+    <option name="totallyTimeSpent" value="315416000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
